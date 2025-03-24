@@ -80,7 +80,7 @@
 		
 		<div class="offcanvas__overlay"></div>
 	
-		<!-- Start Header -->
+		 <!-- Start Header -->
 		<header id="tr_header">
 			<div class="container">
 				<div class="row">
@@ -94,31 +94,32 @@
 						<div class="header_right d-flex justify-content-end">
 							<nav class="main-menu align-self-center">
 								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about.html">About</a></li>
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="about.html">Acerca de</a></li>
 									<li><a href="tour.html">Tour</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+									<li><a href="services.html">Servicios</a></li>
+									<li><a href="#">Páginas <i class="fa-solid fa-chevron-down"></i></a>
 										<ul class="sub-menu">
-											<li><a href="blog.html">Blog List</a></li>
-											<li><a href="blog-details.html">Blog Details</a></li>
+											<li><a href="blog.html">Lista de Blogs</a></li>
+											<li><a href="blog-details.html">Detalles del Blog</a></li>
 											<li><a href="tour.html">Tour</a></li>
-											<li><a href="tour-details.html">Tour Details</a></li>
+											<li><a href="tour-details.html">Detalles del Tour</a></li>
 										</ul>
 									</li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="contact.html">Contacto</a></li>
+									
 								</ul>
 							</nav>
 							
 							<div class="call_us d-flex align-self-center">
 								<i class="ph ph-headset align-self-center"></i>
 								<div class="call_content align-self-center">
-									<span>Call Us</span>
+									<span>Llamanos</span>
 									<a href="tel:+8801546857487">+8801546857487</a>
 								</div>
 							</div>
 							
-							<a href="#" class="green_btn align-self-center">Login / Register <i class="ph ph-arrow-right"></i></a>
+							<a href="#" class="green_btn align-self-center">Iniciar sesion / Registrarse <i class="ph ph-arrow-right"></i></a>
 							<div class="header__hamburger d-xl-none my-auto">
 								<div class="sidebar__toggle">
 									<i class="ph ph-list"></i>
@@ -130,241 +131,233 @@
 			</div>
 		</header>
 		<!-- End Header -->
+
+		   <!-- Inicio Banner -->
+			<section class="main_banner tour_banner" style="background-image: url(assets/img/bg/banner_bg.jpg);">
+    			<div class="container">
+        			<div class="row">
+           			 <div class="col-12 text-center">
+                		<h1>Paquetes de Tour</h1>
+               		 <p><a href="#">Inicio</a> <i class="ph ph-caret-double-right"></i> Paquetes de Tour</p>
+            			</div>
+        			</div>
+    			</div>
+				</section>
+<!-- Fin Banner -->
+
+
+
+<!-- Inicio Filtro de Búsqueda -->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-10 col-lg-12 col-md-10 col-10 mx-auto text-center">
+            <div class="tr_search_filter">
+                <form action="#" class="d-flex justify-content-center" method="post">
+                    <div class="tr_search_location">
+                        <label for="trs_location">Ubicación*</label>
+                        <select id="trs_location">
+                            <option>Oasis de Dubái</option>
+                            <option>Playa de Barcelona</option>
+                            <option>Cove del Caribe</option>
+                            <option>Oasis de Dubái</option>
+                            <option>Lujo en Londres</option>
+                            <option>Refugio en las Maldivas</option>
+                        </select>
+                    </div>		
+
+                    <div class="check_in">
+                        <label for="checkin_field">Entrada*</label>
+                        <div class="trdate_picker date" id="tr_dpicker1">
+                            <input type="text" class="form-control" placeholder="Fecha de Entrada" id="checkin_field">
+                            <span class="input-group-append">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                        </div>
+                    </div>		
+
+                    <div class="check_out">
+                        <label for="checkout_field">Salida*</label>
+                        <div class="trdate_picker date" id="tr_dpicker2">
+                            <input type="text" class="form-control" placeholder="Fecha de Salida" id="checkout_field">
+                            <span class="input-group-append">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>									
+                        </div>
+                    </div>		
+
+                    <div class="adut_box">
+                        <label>Adultos*</label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit">Buscar <i class="ph ph-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>		
+<!-- Fin Filtro de Búsqueda -->
+
 		
-		<!-- Start Banner -->
-		<section class="main_banner tour_banner" style="background-image: url(assets/img/bg/banner_bg.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						<h1>Tour Packages</h1>
-						<p><a href="#">Home</a> <i class="ph ph-caret-double-right"></i> Tour Packages</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Start Banner -->
-
-		<!-- Start Searh filter -->		
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-10 col-lg-12 col-md-10 col-10 mx-auto text-center">
-					<div class="tr_search_filter">
-						<form action="#" class="d-flex justify-content-center" method="post">
-							<div class="tr_search_location">
-								<label for="trs_location">Location*</label>
-								<select id="trs_location">
-									<option>Dubai Oasis</option>
-									<option>Barcelona Beach</option>
-									<option>Caribbean Cove</option>
-									<option>Dubai Oasis</option>
-									<option>London Luxe</option>
-									<option>Maldives Haven</option>
-								</select>
-							</div>		
-
-							<div class="check_in">
-								<label for="checkin_field">Check - In*</label>
-								<div class="trdate_picker date" id="tr_dpicker1">
-									<input type="text" class="form-control" placeholder="Check In Date" id="checkin_field">
-									<span class="input-group-append">
-										<i class="fa-solid fa-calendar-days"></i>
-									</span>
-								</div>
-							</div>		
-
-							<div class="check_out">
-								<label for="checkout_field">Check - Out*</label>
-								<div class="trdate_picker date" id="tr_dpicker2">
-									<input type="text" class="form-control" placeholder="Check Out Date" id="checkout_field">
-									<span class="input-group-append">
-										<i class="fa-solid fa-calendar-days"></i>
-									</span>									
-								</div>
-							</div>		
-
-							<div class="adut_box">
-								<label>Adult*</label>
-								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-									<option>8</option>
-									<option>9</option>
-									<option>10</option>
-								</select>
-							</div>
-							
-							<button type="submit">Search <i class="ph ph-magnifying-glass"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>		
-		<!-- End Searh filter -->
+<!-- Inicio Paquetes de Tour -->
+<section class="tour-packages">
+	<div class="container">					
+	  <div class="row">
+		<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
+		  <div class="package_item">
+			<div class="pack_image">
+			  <img src="assets/img/tour/1.jpg" alt="img">
+			  <div class="pac_badge">
+				<span class="feat">Destacado</span>
+				<span class="day">5 Días</span>
+			  </div>
+			  <a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
+			</div>	
+			<div class="pack_content">
+			  <h3><a href="tour-details.html">Tour de 3 días por Atenas: Acrópolis, Partenón, Distrito de Plaka</a></h3>
+			  <div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubái</span></div>
+			  <div class="pack_btm d-flex">
+				<span class="pack_price">$245 / <small>Persona</small></span>
+				<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
+			  </div>
+			</div>				
+		  </div>
+		</div><!-- Fin Col -->			
+  
+		<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
+		  <div class="package_item">
+			<div class="pack_image">
+			  <img src="assets/img/tour/2.jpg" alt="img">
+			  <div class="pac_badge">
+				<span class="feat">Destacado</span>
+				<span class="day">5 Días</span>
+			  </div>
+			  <a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
+			</div>	
+			<div class="pack_content">
+			  <h3><a href="tour-details.html">Tour de 3 días por Atenas: Acrópolis, Partenón, Distrito de Plaka</a></h3>
+			  <div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubái</span></div>
+			  <div class="pack_btm d-flex">
+				<span class="pack_price">$245 / <small>Persona</small></span>
+				<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
+			  </div>
+			</div>				
+		  </div>
+		</div><!-- Fin Col -->
+  
+		<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
+		  <div class="package_item">
+			<div class="pack_image">
+			  <img src="assets/img/tour/3.jpg" alt="img">
+			  <div class="pac_badge">
+				<span class="feat">Destacado</span>
+				<span class="day">5 Días</span>
+			  </div>
+			  <a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
+			</div>	
+			<div class="pack_content">
+			  <h3><a href="tour-details.html">Tour de 3 días por Atenas: Acrópolis, Partenón, Distrito de Plaka</a></h3>
+			  <div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubái</span></div>
+			  <div class="pack_btm d-flex">
+				<span class="pack_price">$245 / <small>Persona</small></span>
+				<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
+			  </div>
+			</div>				
+		  </div>
+		</div><!-- Fin Col -->						
+  
+		<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
+		  <div class="package_item">
+			<div class="pack_image">
+			  <img src="assets/img/tour/4.jpg" alt="img">
+			  <div class="pac_badge">
+				<span class="feat">Destacado</span>
+				<span class="day">5 Días</span>
+			  </div>
+			  <a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
+			</div>	
+			<div class="pack_content">
+			  <h3><a href="tour-details.html">Tour de 3 días por Atenas: Acrópolis, Partenón, Distrito de Plaka</a></h3>
+			  <div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubái</span></div>
+			  <div class="pack_btm d-flex">
+				<span class="pack_price">$245 / <small>Persona</small></span>
+				<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
+			  </div>
+			</div>				
+		  </div>
+		</div><!-- Fin Col -->							
+  
+		<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
+		  <div class="package_item">
+			<div class="pack_image">
+			  <img src="assets/img/tour/5.jpg" alt="img">
+			  <div class="pac_badge">
+				<span class="feat">Destacado</span>
+				<span class="day">5 Días</span>
+			  </div>
+			  <a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
+			</div>	
+			<div class="pack_content">
+			  <h3><a href="tour-details.html">Tour de 3 días por Atenas: Acrópolis, Partenón, Distrito de Plaka</a></h3>
+			  <div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubái</span></div>
+			  <div class="pack_btm d-flex">
+				<span class="pack_price">$245 / <small>Persona</small></span>
+				<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
+			  </div>
+			</div>				
+		  </div>
+		</div><!-- Fin Col -->							
+  
+		<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
+		  <div class="package_item">
+			<div class="pack_image">
+			  <img src="assets/img/tour/6.jpg" alt="img">
+			  <div class="pac_badge">
+				<span class="feat">Destacado</span>
+				<span class="day">5 Días</span>
+			  </div>
+			  <a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
+			</div>	
+			<div class="pack_content">
+			  <h3><a href="tour-details.html">Tour de 3 días por Atenas: Acrópolis, Partenón, Distrito de Plaka</a></h3>
+			  <div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubái</span></div>
+			  <div class="pack_btm d-flex">
+				<span class="pack_price">$245 / <small>Persona</small></span>
+				<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
+			  </div>
+			</div>				
+		  </div>
+		</div><!-- Fin Col -->	
+  
+		<div class="col-12 text-center">
+		  <div class="tr-pagination">
+			<a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#" class="current">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <!-- Fin Paquetes de Tour -->
+  
 		
-		<!-- Start Tour Packages -->
-		<section class="tour-packages">
-			<div class="container">					
-				<div class="row">
-					<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
-						<div class="package_item">
-							<div class="pack_image">
-								<img src="assets/img/tour/1.jpg" alt="img">
-								<div class="pac_badge">
-									<span class="feat">Featured</span>
-									<span class="day">5 Days</span>
-								</div>
-								
-								<a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
-							</div>	
-							
-							<div class="pack_content">
-								<h3><a href="tour-details.html">Acropolis, Parthenon, Plaka District 3 Day Athens Tour</a></h3>
-								<div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubai</span></div>
-								<div class="pack_btm d-flex">
-									<span class="pack_price">$245 / <small>Person</small></span>
-									<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
-								</div>
-							</div>				
-						</div>
-					</div><!-- End Col -->			
-
-					<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
-						<div class="package_item">
-							<div class="pack_image">
-								<img src="assets/img/tour/2.jpg" alt="img">
-								<div class="pac_badge">
-									<span class="feat">Featured</span>
-									<span class="day">5 Days</span>
-								</div>
-								
-								<a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
-							</div>	
-							
-							<div class="pack_content">
-								<h3><a href="tour-details.html">Acropolis, Parthenon, Plaka District 3 Day Athens Tour</a></h3>
-								<div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubai</span></div>
-								<div class="pack_btm d-flex">
-									<span class="pack_price">$245 / <small>Person</small></span>
-									<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
-								</div>
-							</div>				
-						</div>
-					</div><!-- End Col -->
-
-					<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
-						<div class="package_item">
-							<div class="pack_image">
-								<img src="assets/img/tour/3.jpg" alt="img">
-								<div class="pac_badge">
-									<span class="feat">Featured</span>
-									<span class="day">5 Days</span>
-								</div>
-								
-								<a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
-							</div>	
-							
-							<div class="pack_content">
-								<h3><a href="tour-details.html">Acropolis, Parthenon, Plaka District 3 Day Athens Tour</a></h3>
-								<div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubai</span></div>
-								<div class="pack_btm d-flex">
-									<span class="pack_price">$245 / <small>Person</small></span>
-									<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
-								</div>
-							</div>				
-						</div>
-					</div><!-- End Col -->						
-
-					<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
-						<div class="package_item">
-							<div class="pack_image">
-								<img src="assets/img/tour/4.jpg" alt="img">
-								<div class="pac_badge">
-									<span class="feat">Featured</span>
-									<span class="day">5 Days</span>
-								</div>
-								
-								<a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
-							</div>	
-							
-							<div class="pack_content">
-								<h3><a href="tour-details.html">Acropolis, Parthenon, Plaka District 3 Day Athens Tour</a></h3>
-								<div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubai</span></div>
-								<div class="pack_btm d-flex">
-									<span class="pack_price">$245 / <small>Person</small></span>
-									<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
-								</div>
-							</div>				
-						</div>
-					</div><!-- End Col -->							
-					
-					<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
-						<div class="package_item">
-							<div class="pack_image">
-								<img src="assets/img/tour/5.jpg" alt="img">
-								<div class="pac_badge">
-									<span class="feat">Featured</span>
-									<span class="day">5 Days</span>
-								</div>
-								
-								<a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
-							</div>	
-							
-							<div class="pack_content">
-								<h3><a href="tour-details.html">Acropolis, Parthenon, Plaka District 3 Day Athens Tour</a></h3>
-								<div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubai</span></div>
-								<div class="pack_btm d-flex">
-									<span class="pack_price">$245 / <small>Person</small></span>
-									<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
-								</div>
-							</div>				
-						</div>
-					</div><!-- End Col -->							
-					
-					<div class="col-xl-4 col-md-6 col-12 wow fadeInUp">
-						<div class="package_item">
-							<div class="pack_image">
-								<img src="assets/img/tour/6.jpg" alt="img">
-								<div class="pac_badge">
-									<span class="feat">Featured</span>
-									<span class="day">5 Days</span>
-								</div>
-								
-								<a href="tour-details.html" class="tour_btn"><i class="fa-regular fa-eye"></i></a>
-							</div>	
-							
-							<div class="pack_content">
-								<h3><a href="tour-details.html">Acropolis, Parthenon, Plaka District 3 Day Athens Tour</a></h3>
-								<div class="pac_location d-flex gap-2"><i class="ph ph-map-pin-area align-self-center"></i> <span class="align-self-center">Abu Dhabi, Dubai</span></div>
-								<div class="pack_btm d-flex">
-									<span class="pack_price">$245 / <small>Person</small></span>
-									<span class="pack_rating ms-auto align-self-center"><i class="fa-regular fa-star"></i> 4.8</span>
-								</div>
-							</div>				
-						</div>
-					</div><!-- End Col -->	
-					
-					<div class="col-12 text-center">
-						<div class="tr-pagination">
-							<a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-							<a href="#">1</a>
-							<a href="#">2</a>
-							<a href="#" class="current">3</a>
-							<a href="#">4</a>
-							<a href="#">5</a>
-							<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Tour Packages -->
-		
-		<!-- Start Footer -->	
+		 <!-- Start Footer -->	
 		<footer class="tr_footer wow fadeIn" style="background-image: url(assets/img/bg/footer.jpg);">
 			<div class="container">
 				<div class="row">
@@ -372,10 +365,10 @@
 						<div class="footer_about">
 							<img src="assets/img/logo-white.svg" alt="img">
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis  imperdiet 
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis imperdiet
 								titor sodales vulputate
 							</p>
-							<span>Connect with us</span>
+							<span>Conéctate con nosotros</span>
 							<ul class="social_link">
 								<li><a href="#"><i class="ph ph-facebook-logo"></i></a></li>
 								<li><a href="#"><i class="ph ph-x-logo"></i></a></li>
@@ -391,11 +384,12 @@
 								<div class="footer_widget">
 									<h3 class="footer-title">About Trvelo</h3>
 									<ul>
-										<li><a href="#">Faq's </a></li>
-										<li><a href="#">Privacy Policy </a></li>
-										<li><a href="#">Term & Conditions  </a></li>
-										<li><a href="#">Support</a></li>
-										<li><a href="#">Contact</a></li>
+										<li><a href="#">Preguntas frecuentes </a></li>
+										<li><a href="#">Política de privacidad </a></li>
+										<li><a href="#">Términos y condiciones </a></li>
+										<li><a href="#">Soporte</a></li>
+										<li><a href="#">Contacto</a></li>
+										
 									</ul>
 								</div>	
 							</div><!-- End Col -->	
@@ -404,11 +398,13 @@
 								<div class="footer_widget">
 									<h3 class="footer-title">Useful Links</h3>
 									<ul>
-										<li><a href="#">Faq's </a></li>
-										<li><a href="#">Privacy Policy </a></li>
-										<li><a href="#">Term & Conditions  </a></li>
-										<li><a href="#">Support</a></li>
-										<li><a href="#">Contact</a></li>
+										<li><a href="#">Preguntas frecuentes </a></li>
+										<li><a href="#">Política de privacidad </a></li>
+										<li><a href="#">Términos y condiciones </a></li>
+										<li><a href="#">Soporte</a></li>
+										<li><a href="#">Contacto</a></li>
+										
+
 									</ul>
 								</div>									
 							</div><!-- End Col -->	
@@ -437,12 +433,13 @@
 							
 							<div class="col-xl-4 col-lg-12 col-md-6 col-12">
 								<div class="footer_widget subscription_form">
-									<h3 class="footer-title">Subscribe To Newsletter</h3>
+									<h3 class="footer-title">Suscríbete al boletín</h3>
 									<form action="#" method="post">
-										<input type="email" placeholder="Please Enter Email">
+										<input type="email" placeholder="Por favor ingresa tu correo electrónico">
 										<button type="submit"><i class="ph ph-rocket-launch"></i></button>
 									</form>
-									<span>Don’t Spam, Please enter Real Email</span>
+									<span>No es spam, por favor ingresa un correo electrónico real</span>
+									
 								</div>
 							</div><!-- End Col -->	
 							
@@ -459,7 +456,7 @@
 				</div>
 			</div>
 		</footer>	
-		<!-- End Footer -->	
+		<!-- End Footer -->		
 
 		<!-- Start progress-wrap -->
 		<div class="progress-wrap">
