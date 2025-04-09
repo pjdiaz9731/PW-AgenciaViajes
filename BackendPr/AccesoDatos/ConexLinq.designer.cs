@@ -63,7 +63,7 @@ namespace BackendPr.AccesoDatos
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Insertar")]
-		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rol", DbType="NVarChar(50)")] string rol)
+		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, ref int? idUsuario, ref int? errorBD, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rol", DbType="NVarChar(50)")] string rol)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombreCompleto, usuario, contrasena, email, rol);
 			return ((int)(result.ReturnValue));
