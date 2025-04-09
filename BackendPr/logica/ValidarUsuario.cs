@@ -15,7 +15,7 @@ public class ValidarUsuario
         res.error = new List<Error>();
 
         
-        string usuarioEsperado = "Usuario"; // Ajusta esto según tu lógica real
+        string usuarioEsperado = "Usuario"; 
 
         if (req.Usuario.NombreCompleto != usuarioEsperado)
         {
