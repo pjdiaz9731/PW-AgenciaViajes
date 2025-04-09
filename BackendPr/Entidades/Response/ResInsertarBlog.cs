@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace BackendViajes.Entidades
 {
-    internal class ResInsertarBlog: ResBase
+    public class ResInsertarBlog: ResBase
     {
+        public Blog Blog { get; set; }
+
     }
 }

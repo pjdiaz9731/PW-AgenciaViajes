@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Publicacion
+    public class Blog
     {
+       
         public string Titulo { get; set; }
         public string Contenido { get; set; }
        
