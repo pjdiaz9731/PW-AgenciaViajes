@@ -1,4 +1,5 @@
-﻿using BackendViajes.Entidades;
+﻿using BackendPr.AccesoDatos;
+using BackendViajes.Entidades;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Text.RegularExpressions;
 
 public class LogicaUsuario
 {
-    public ResInsertarUsuario Insertar(ResInsertarUsuario req)
+    public ResInsertarUsuario Insertar(ResInsertarUsuario req, string errorDesc)
     {
         ResInsertarUsuario res = new ResInsertarUsuario();
        
@@ -28,7 +29,7 @@ public class LogicaUsuario
                     codigoError = enumErrores.reqNulo,
                     errorMsg = "El request o el objeto usuario es nulo"
                 });
-                res.resultado = false;
+                res.Resultado = false;
                 return res;
             }
 
@@ -79,16 +80,16 @@ public class LogicaUsuario
             // Si hubo errores en la validación, regresamos el resultado con errores
             if (res.error.Any())
             {
-                res.resultado = false;
+                res.Resultado = false;
                 return res;
             }
 
             // Si todo está bien, insertamos el usuario en la base de datos
             int? idUsuario = 0;
             int? errorBD = 0;
-            string errorDesc = "";
+            errorDesc = "";
 
-            using (ConexLinq linq = new ConexLinq())
+            using (LinqConnecDataContext linq = new LinqConnecDataContext())
             {
                 // Llamada al procedimiento almacenado para insertar el usuario
                 linq.sp_Usuarios_Insertar(
@@ -98,8 +99,7 @@ public class LogicaUsuario
                     req.Usuario.Rol,
                     ref idUsuario,
                     ref errorBD,
-                    ref errorDesc
-                );
+                    errorDesc);
             }
 
             // Verificamos si la inserción fue exitosa
@@ -110,11 +110,11 @@ public class LogicaUsuario
                     codigoError = enumErrores.errorEnBaseDatos,
                     errorMsg = errorDesc
                 });
-                res.resultado = false;
+                res.Resultado = false;
             }
             else
             {
-                res.resultado = true;
+                res.Resultado = true;
             }
         }
         catch (Exception ex)
@@ -125,7 +125,7 @@ public class LogicaUsuario
                 codigoError = enumErrores.errorNoControlado,
                 errorMsg = ex.Message
             });
-            res.resultado = false;
+            res.Resultado = false;
         }
 
         return res;

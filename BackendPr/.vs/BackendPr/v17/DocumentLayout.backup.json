@@ -1,61 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\",
+  "WorkspaceRootPath": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|c:\\users\\diego\\onedrive\\documentos\\git\\pw-agenciaviajes\\backendpr\\entidades\\entities\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\entities\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\accesodatos\\conexlinq.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\accesodatos\\conexlinq.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:accesodatos\\conexlinq.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|c:\\users\\panje\\onedrive\\desktop\\pw-agenciaviajes\\backendpr\\entidades\\response\\resinsertarblog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\response\\resinsertarblog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\response\\resinsertarblog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\response\\resinsertarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\response\\resinsertarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\response\\resinsertarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|c:\\users\\panje\\onedrive\\desktop\\pw-agenciaviajes\\backendpr\\logica\\validarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\logica\\validarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:logica\\validarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\validar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\validar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\entities\\validar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\response\\resvalidacionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\response\\resvalidacionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\response\\resvalidacionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\enum\\enumerrores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\enum\\enumerrores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\enum\\enumerrores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\request\\reqvalidacionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\request\\reqvalidacionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\request\\reqvalidacionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\entidades\\request\\reqinsertarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\entidades\\request\\reqinsertarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:entidades\\request\\reqinsertarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7486DF-941E-4F7E-B8C5-38DF04C175F0}|BackendPr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -66,71 +66,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ResInsertarBlog.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarBlog.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarBlog.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResInsertarBlog.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarBlog.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarBlog.cs",
               "RelativeToolTip": "Entidades\\Response\\ResInsertarBlog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:42:34.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:42:34.291Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LogicaUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\logica\\LogicaUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\logica\\LogicaUsuario.cs",
               "RelativeDocumentMoniker": "logica\\LogicaUsuario.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\logica\\LogicaUsuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\logica\\LogicaUsuario.cs",
               "RelativeToolTip": "logica\\LogicaUsuario.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAkwFEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:36:44.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:36:44.169Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ValidarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\logica\\ValidarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\logica\\ValidarUsuario.cs",
               "RelativeDocumentMoniker": "logica\\ValidarUsuario.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\logica\\ValidarUsuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\logica\\ValidarUsuario.cs",
               "RelativeToolTip": "logica\\ValidarUsuario.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAuwBEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:36:58.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:36:58.106Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ResInsertarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarUsuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResInsertarUsuario.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarUsuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResInsertarUsuario.cs",
               "RelativeToolTip": "Entidades\\Response\\ResInsertarUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:42:31.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:42:31.435Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Publicacion.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Publicacion.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Publicacion.cs",
               "RelativeDocumentMoniker": "Entidades\\entities\\Publicacion.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Publicacion.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Publicacion.cs",
               "RelativeToolTip": "Entidades\\entities\\Publicacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -141,73 +133,68 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ConexLinq.dbml",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\AccesoDatos\\ConexLinq.dbml",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\AccesoDatos\\ConexLinq.dbml",
               "RelativeDocumentMoniker": "AccesoDatos\\ConexLinq.dbml",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\AccesoDatos\\ConexLinq.dbml",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\AccesoDatos\\ConexLinq.dbml",
               "RelativeToolTip": "AccesoDatos\\ConexLinq.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2025-04-09T04:31:11.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:31:11.43Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Validar.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Validar.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Validar.cs",
               "RelativeDocumentMoniker": "Entidades\\entities\\Validar.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Validar.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Validar.cs",
               "RelativeToolTip": "Entidades\\entities\\Validar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:10:19.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:10:19.325Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Usuario.cs",
               "RelativeDocumentMoniker": "Entidades\\entities\\Usuario.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Usuario.cs",
               "RelativeToolTip": "Entidades\\entities\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:39:43.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:39:43.107Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ResValidacionUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResValidacionUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResValidacionUsuarios.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResValidacionUsuarios.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResValidacionUsuarios.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Response\\ResValidacionUsuarios.cs",
               "RelativeToolTip": "Entidades\\Response\\ResValidacionUsuarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:05:08.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T05:05:08.786Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "enumErrores.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\enum\\enumErrores.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\enum\\enumErrores.cs",
               "RelativeDocumentMoniker": "Entidades\\enum\\enumErrores.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\enum\\enumErrores.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\enum\\enumErrores.cs",
               "RelativeToolTip": "Entidades\\enum\\enumErrores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:50:20.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:50:20.908Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Error.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Error.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Error.cs",
               "RelativeDocumentMoniker": "Entidades\\entities\\Error.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Error.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\entities\\Error.cs",
               "RelativeToolTip": "Entidades\\entities\\Error.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,9 +204,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "ReqValidacionUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqValidacionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqValidacionUsuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqValidacionUsuario.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqValidacionUsuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqValidacionUsuario.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqValidacionUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,9 +216,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "ReqInsertarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqInsertarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqInsertarUsuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqInsertarUsuario.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqInsertarUsuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Entidades\\Request\\ReqInsertarUsuario.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqInsertarUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -241,9 +228,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\panje\\OneDrive\\Desktop\\PW-AgenciaViajes\\BackendPr\\Program.cs",
+              "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

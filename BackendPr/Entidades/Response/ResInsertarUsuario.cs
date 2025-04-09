@@ -10,7 +10,8 @@ namespace BackendViajes.Entidades
     public class ResInsertarUsuario : ResBase
     {
         public Usuario Usuario { get; set; }
-        public bool resultado { get; set; }
-        public List<Error> error { get; set; }
+        public  bool Resultado { get; set; } 
+
+        public List<Error> Error { get; set; }
     }
 }

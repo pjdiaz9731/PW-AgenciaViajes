@@ -1,4 +1,4 @@
-﻿using Logica.Usuario;
+﻿using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,7 @@ namespace BackendViajes.Entidades
 {
     public class ReqInsertarUsuario
     {
-        public LogicaUsuario Usuario;
+        public Usuario Usuario;
+    
     }
 }
