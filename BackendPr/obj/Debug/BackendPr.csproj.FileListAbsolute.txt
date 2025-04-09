@@ -1,0 +1,2 @@
+C:\Users\panje\OneDrive\Desktop\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.csproj.AssemblyReference.cache
+C:\Users\panje\OneDrive\Desktop\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.csproj.CoreCompileInputs.cache

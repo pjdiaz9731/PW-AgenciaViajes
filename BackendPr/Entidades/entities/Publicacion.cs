@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entidades
+{
+    public class Publicacion
+    {
+        public string Titulo { get; set; }
+        public string Contenido { get; set; }
+       
+        public string imagen { get; set; }
+
+    }
+}
