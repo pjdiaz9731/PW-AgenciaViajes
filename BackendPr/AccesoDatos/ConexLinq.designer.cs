@@ -77,7 +77,7 @@ namespace BackendPr.AccesoDatos
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Blog_Insertar")]
-		public int sp_Blog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Titulo", DbType="NVarChar(150)")] string titulo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contenido", DbType="NVarChar(MAX)")] string contenido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Imagen", DbType="NVarChar(255)")] string imagen)
+		public int sp_Blog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Titulo", DbType="NVarChar(150)")] string titulo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contenido", DbType="NVarChar(MAX)")] string contenido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Imagen", DbType="NVarChar(255)")] string imagen, ref int? idBD)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), titulo, contenido, imagen);
 			return ((int)(result.ReturnValue));
