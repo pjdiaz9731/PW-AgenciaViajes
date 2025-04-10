@@ -54,19 +54,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ConexLinq.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\entities\Contacto.cs" />
     <Compile Include="Entidades\entities\Error.cs" />
     <Compile Include="Entidades\entities\Blog.cs" />
     <Compile Include="Entidades\entities\Usuario.cs" />
     <Compile Include="Entidades\entities\Validar.cs" />
     <Compile Include="Entidades\enum\enumErrores.cs" />
     <Compile Include="Entidades\Request\ReqInsertarBlog.cs" />
+    <Compile Include="Entidades\Request\ReqInsertarContacto.cs" />
     <Compile Include="Entidades\Request\ReqInsertarUsuario.cs" />
     <Compile Include="Entidades\Request\ReqValidacionUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
     <Compile Include="Entidades\Response\ResInsertarBlog.cs" />
+    <Compile Include="Entidades\Response\ResInsertarContacto.cs" />
     <Compile Include="Entidades\Response\ResInsertarUsuario.cs" />
     <Compile Include="Entidades\Response\ResValidacionUsuarios.cs" />
-    <Compile Include="logica\Blog.cs" />
+    <Compile Include="logica\Contacto.cs" />
+    <Compile Include="logica\LogicaBlog.cs" />
     <Compile Include="logica\LogicaUsuario.cs" />
     <Compile Include="logica\ValidarUsuario.cs" />
     <Compile Include="Program.cs" />

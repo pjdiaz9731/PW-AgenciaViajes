@@ -21,5 +21,7 @@ namespace Entidades
         credencialesNoValidas = 8,
         cuentaYaVerificada = 9,
         usuarioincorrecto= 10,
+        AsuntoFalta = 11,
+        SinMensaje = 12,
     }
 }
