@@ -13,7 +13,7 @@ namespace Entidades
         public string Titulo { get; set; }
         public string Contenido { get; set; }
        
-        public string imagen { get; set; }
-
+        public string Imagen { get; set; }
+      
     }
 }

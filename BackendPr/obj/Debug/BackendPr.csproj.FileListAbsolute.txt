@@ -1,2 +1,9 @@
 C:\Users\panje\OneDrive\Desktop\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.csproj.AssemblyReference.cache
 C:\Users\panje\OneDrive\Desktop\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.csproj.CoreCompileInputs.cache
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\bin\Debug\BackendPr.exe.config
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\bin\Debug\BackendPr.exe
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\bin\Debug\BackendPr.pdb
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.csproj.AssemblyReference.cache
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.csproj.CoreCompileInputs.cache
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.exe
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\BackendPr\obj\Debug\BackendPr.pdb
