@@ -39,4 +39,10 @@
     <Parameter Name="Mensaje" Parameter="mensaje" Type="System.String" DbType="NVarChar(MAX)" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_Reservas_Insertar" Method="sp_Reservas_Insertar">
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TourID" Parameter="tourID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CantidadPersonas" Parameter="cantidadPersonas" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>
