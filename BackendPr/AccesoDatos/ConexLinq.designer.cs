@@ -96,6 +96,13 @@ namespace BackendPr.AccesoDatos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, email, asunto, mensaje);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_Insertar")]
+		public int sp_Reservas_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TourID", DbType="Int")] System.Nullable<int> tourID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CantidadPersonas", DbType="Int")] System.Nullable<int> cantidadPersonas)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, tourID, cantidadPersonas);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_Usuarios_LoginResult

@@ -11,6 +11,8 @@ namespace Entidades
     {
         public Contacto Contacto { get; set; }
         public Usuario Usuario { get; set; }
+
+        public Reservas Reservas { get; set;  }
         public bool resultado { get; set; }
         public List<Error> error { get; set; }
     }

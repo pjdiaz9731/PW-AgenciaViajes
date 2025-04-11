@@ -11,7 +11,7 @@ namespace BackendPr.logica
 {
     public class Contacto
     {
-        public ResInsertarContacto Insertar (ResInsertarContacto req)
+        public ResInsertarContacto Insertar(ResInsertarContacto req, string errorDesc)
         {
             ResInsertarContacto res = new ResInsertarContacto();
             res.error = new List<Error>();
@@ -33,7 +33,7 @@ namespace BackendPr.logica
                     errorMsg = "Correo requerido"
                 });
             }
-            
+
 
             if (string.IsNullOrWhiteSpace(req.Contacto.asunto))
             {

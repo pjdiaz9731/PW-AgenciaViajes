@@ -23,5 +23,7 @@ namespace Entidades
         usuarioincorrecto= 10,
         AsuntoFalta = 11,
         SinMensaje = 12,
+        fechainvalida =13,
+        valorinvalido =14,
     }
 }
