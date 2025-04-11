@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BackendPr.logica
 {
-    public class Blog
+    public class LogicaBlog
     {
         public ResInsertarBlog Insertar(ResInsertarBlog req)
         {
@@ -21,7 +21,7 @@ namespace BackendPr.logica
 
             using (LinqConnecDataContext linq = new LinqConnecDataContext())
             {
-                linq.sp_Blog_Insertar(req.Blog.Titulo, req.Blog.Contenido, req.Blog.Imagen, ref idBD);
+                linq.sp_Blog_Insertar(req.Blog.Titulo, req.Blog.Contenido, req.Blog.Imagen);
 
 
                 if (idBD > 0)

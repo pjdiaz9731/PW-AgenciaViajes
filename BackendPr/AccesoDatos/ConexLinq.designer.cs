@@ -63,7 +63,7 @@ namespace BackendPr.AccesoDatos
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Insertar")]
-		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, ref int? idUsuario, ref int? errorBD, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rol", DbType="NVarChar(50)")] string rol)
+		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rol", DbType="NVarChar(50)")] string rol)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombreCompleto, usuario, contrasena, email, rol);
 			return ((int)(result.ReturnValue));
@@ -77,7 +77,7 @@ namespace BackendPr.AccesoDatos
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Blog_Insertar")]
-		public int sp_Blog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Titulo", DbType="NVarChar(150)")] string titulo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contenido", DbType="NVarChar(MAX)")] string contenido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Imagen", DbType="NVarChar(255)")] string imagen, ref int? idBD)
+		public int sp_Blog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Titulo", DbType="NVarChar(150)")] string titulo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contenido", DbType="NVarChar(MAX)")] string contenido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Imagen", DbType="NVarChar(255)")] string imagen)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), titulo, contenido, imagen);
 			return ((int)(result.ReturnValue));
@@ -88,6 +88,20 @@ namespace BackendPr.AccesoDatos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<sp_Blog_ListarResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Contacto_Insertar")]
+		public int sp_Contacto_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Asunto", DbType="NVarChar(200)")] string asunto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mensaje", DbType="NVarChar(MAX)")] string mensaje)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, email, asunto, mensaje);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_Insertar")]
+		public int sp_Reservas_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TourID", DbType="Int")] System.Nullable<int> tourID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CantidadPersonas", DbType="Int")] System.Nullable<int> cantidadPersonas)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, tourID, cantidadPersonas);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
