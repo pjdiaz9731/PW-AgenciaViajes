@@ -93,3 +93,9 @@ C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\obj\Debug\API.csproj
 C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\obj\Debug\API.csproj.Up2Date
 C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\obj\Debug\API.dll
 C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\obj\Debug\API.pdb
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\bin\BackendPr.exe
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\bin\BackendPr.pdb
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\bin\BackendPr.exe.config
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\bin\BackendPr.xml
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\bin\Swashbuckle.Core.dll
+C:\Users\Diego\OneDrive\Documentos\Git\PW-AgenciaViajes\API\bin\WebActivatorEx.dll
