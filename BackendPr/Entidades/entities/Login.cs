@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BackendPr.Entidades.entities
 {
-    public class Validar
+    public class Login
     {
-        public string usuario {  get; set; }
-        public string contrasena { get; set; }
+        
+        public string usuario { get; set; }
+        public string Contrasena { get; set; }
     }
 }

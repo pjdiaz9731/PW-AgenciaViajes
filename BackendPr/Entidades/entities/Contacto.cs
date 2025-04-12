@@ -8,11 +8,13 @@ namespace BackendPr.Entidades
 {
     public class Contacto
     {
-        public string nombre { get; set; }
-        public string email { get; set; }
+        public string Nombre { get; set; }
+        public string Email { get; set; }
 
-        public string asunto { get; set; }
+        public string Telefono { get; set; }
 
-        public string mensaje { get; set; }
+        public string Mensaje { get; set; }
+
+        public string Direccion { get; set; }
     }
 }

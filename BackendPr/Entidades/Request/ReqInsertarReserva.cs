@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackendPr.Entidades.Request
+namespace BackendPr.Entidades
 {
-    internal class ReqInsertarReserva
+    public class ReqInsertarReserva
     {
     }
 }

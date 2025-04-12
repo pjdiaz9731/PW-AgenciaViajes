@@ -11,11 +11,11 @@ namespace BackendPr.logica
 {
     public class LogicaReservas
     {
-        public ResInsertarReserva Insertar(ResInsertarReserva req, string errorDesc)
+        public ResInsertarReserva Insertar (ResInsertarReserva req, string errorDesc)
         {
             ResInsertarReserva res = new ResInsertarReserva();
             res.error = new List<Error>();
-
+            List<sp_Reservas_PorUsuarioResult> miListaTipoComplejo2 = new List<sp_Reservas_PorUsuarioResult>();
             try
             {
                 if (req == null || req.Reservas == null)
@@ -30,7 +30,7 @@ namespace BackendPr.logica
                 }
 
                 // Validaciones de fechas
-                if (req.Reservas.CheckIn == default || req.Reservas.CheckOut == default)
+                if (req.Reservas.checkIn == default || req.Reservas.checkOut == default)
                 {
                     res.error.Add(new Error
                     {
@@ -38,7 +38,7 @@ namespace BackendPr.logica
                         errorMsg = "Fechas de check-in y check-out requeridas"
                     });
                 }
-                else if (req.Reservas.CheckIn >= req.Reservas.CheckOut)
+                else if (req.Reservas.checkIn >= req.Reservas.checkOut)
                 {
                     res.error.Add(new Error
                     {
@@ -70,13 +70,14 @@ namespace BackendPr.logica
                 using (LinqConnecDataContext linq = new LinqConnecDataContext())
                 {
                     linq.sp_Reservas_Insertar(
-                        req.Reservas.CheckIn,
-                        req.Reservas.CheckOut,
-                        req.Reservas.CantidadAdultos,
-                        ref idReserva,
-                        ref errorBD,
-                        errorDesc
-                    );
+                          req.usuarioID,                        // UsuarioID - INT?
+                         req.Reservas.CantidadAdultos,        // CantidadPersonas - INT?
+                            req.Reservas.checkIn,                // CheckIn - DATETIME
+                         req.Reservas.checkOut,               // CheckOut - DATETIME
+                                ref errorBD,                         // ErrorID - OUTPUT
+                                 errorDesc
+                                 );
+                    miListaTipoComplejo2 = linq.sp_Reservas_PorUsuario(req.usuarioID).ToList();
                 }
 
                 if (idReserva <= 0 || errorBD != 0)

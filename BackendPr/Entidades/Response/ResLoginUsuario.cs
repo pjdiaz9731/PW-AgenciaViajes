@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackendViajes.Entidades
+namespace BackendPr.Entidades.Response
 {
-    public class ResInsertarUsuario : ResBase
+    public class ResLoginUsuario : ResBase
     {
-        public Usuario Usuario { get; set; }
-        public  bool Resultado { get; set; } 
+        public bool Resultado { get; set; }
 
         public List<Error> Error { get; set; }
     }

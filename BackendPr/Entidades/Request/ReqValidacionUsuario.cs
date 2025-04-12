@@ -8,8 +8,7 @@ namespace BackendViajes.Entidades
 {
     public class ReqValidacionUsuario
     {
-        public string Usuario { get; set; }
-        public string Contrasena { get; set; }
+       
         
     }
 }

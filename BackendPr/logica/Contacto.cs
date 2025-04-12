@@ -11,12 +11,12 @@ namespace BackendPr.logica
 {
     public class Contacto
     {
-        public ResInsertarContacto Insertar(ResInsertarContacto req, string errorDesc)
+        public ResInsertarContacto Insertar (ResInsertarContacto req, ref string errorDesc)
         {
             ResInsertarContacto res = new ResInsertarContacto();
             res.error = new List<Error>();
             // Validaciones del usuario
-            if (string.IsNullOrWhiteSpace(req.Contacto.nombre))
+            if (string.IsNullOrWhiteSpace(req.Contacto.Nombre))
             {
                 res.error.Add(new Error
                 {
@@ -25,7 +25,7 @@ namespace BackendPr.logica
                 });
             }
 
-            if (string.IsNullOrWhiteSpace(req.Contacto.email))
+            if (string.IsNullOrWhiteSpace(req.Contacto.Email))
             {
                 res.error.Add(new Error
                 {
@@ -35,15 +35,15 @@ namespace BackendPr.logica
             }
 
 
-            if (string.IsNullOrWhiteSpace(req.Contacto.asunto))
+            if (string.IsNullOrWhiteSpace(req.Contacto.Direccion))
             {
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.AsuntoFalta,
-                    errorMsg = "Por favor ingresar asunto"
+                    errorMsg = "Ingrese una direccion valida"
                 });
             }
-            if (string.IsNullOrWhiteSpace(req.Contacto.mensaje))
+            if (string.IsNullOrWhiteSpace(req.Contacto.Mensaje))
             {
                 res.error.Add(new Error
                 {
@@ -66,14 +66,15 @@ namespace BackendPr.logica
             using (LinqConnecDataContext linq = new LinqConnecDataContext())
             {
                 // Llamada al procedimiento almacenado para insertar el usuario
-                linq.sp_Contacto_Insertar(
-                    req.Contacto.nombre,
-                    req.Contacto.email,
-                    req.Contacto.asunto,
-                    req.Contacto.mensaje,
-                    ref idUsuario,
-                    ref errorBD,
-                    errorDesc);
+                linq.sp_MensajesContacto_Insertar(
+                     req.Contacto.Nombre,
+                      req.Contacto.Email,
+                    req.Contacto.Telefono,
+                     req.Contacto.Mensaje,
+                     req.Contacto.Direccion,
+                    
+                        ref errorBD,
+                    ref errorDesc);
             }
         }
     }

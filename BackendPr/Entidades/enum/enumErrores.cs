@@ -25,5 +25,8 @@ namespace Entidades
         SinMensaje = 12,
         fechainvalida =13,
         valorinvalido =14,
+        NoLink = 15,
+        Nocoment = 16,
+        loginFallido = 17,
     }
 }

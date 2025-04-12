@@ -8,9 +8,6 @@ namespace BackendViajes.Entidades.Request
 {
     public class ReqInsertarBlog
     {
-        public string Titulo { get; set; }
-        public string Contenido { get; set; }
-        public string Autor { get; set; }
-        public string imagen { get; set; }
+       
     }
 }

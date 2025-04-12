@@ -1,4 +1,5 @@
 ﻿using BackendPr.AccesoDatos;
+using BackendPr.Entidades.Response;
 using BackendViajes.Entidades;
 using Entidades;
 using System;
@@ -10,7 +11,7 @@ using System.Text.RegularExpressions;
 
 public class LogicaUsuario
 {
-    public ResInsertarUsuario Insertar(ResInsertarUsuario req, string errorDesc)
+    public ResInsertarUsuario Insertar(ResInsertarUsuario req, ref string errorDesc)
     {
         ResInsertarUsuario res = new ResInsertarUsuario();
        
@@ -93,13 +94,14 @@ public class LogicaUsuario
             {
                 // Llamada al procedimiento almacenado para insertar el usuario
                 linq.sp_Usuarios_Insertar(
-                    req.Usuario.NombreCompleto,
-                    req.Usuario.Email,
-                    req.Usuario.Contrasena,
-                    req.Usuario.Rol,
-                    ref idUsuario,
-                    ref errorBD,
-                    errorDesc);
+                    req.Usuario.NombreCompleto,  
+                     req.Usuario.usuario,   
+                        req.Usuario.Contrasena,      
+                         req.Usuario.Email,          
+                             ref errorBD,                 
+                             ref errorDesc               
+);
+
             }
 
             // Verificamos si la inserción fue exitosa
@@ -130,7 +132,7 @@ public class LogicaUsuario
 
         return res;
     }
-
+    
     // Método auxiliar para validar si un correo es válido
     private bool EsCorreoValido(string correo)
     {
@@ -143,6 +145,61 @@ public class LogicaUsuario
         {
             return false;
         }
+    }
+
+    public class LogicaLogin
+    {
+        public ResLoginUsuario Login(ResLoginUsuario req, ref string errorDesc)
+        {
+            ResLoginUsuario res = new ResLoginUsuario();
+            res.error = new List<Error>();
+            int? errorID = 0;
+            string errorMessage = "";
+
+            try
+            {
+                using (LinqConnecDataContext linq = new LinqConnecDataContext())
+                {
+                    // Llamada al procedimiento almacenado para login
+                    var usuarioResult = linq.sp_Usuarios_Login(res.Login.usuario, res.Login.contrasena, ref errorID, ref errorMessage);
+                    if (usuarioResult != null)
+                    {
+                        // Si el usuario es válido, se retorna el resultado exitoso
+                        res.Resultado = true;
+                        res.usuario = usuarioResult.usuario;
+                        res.contrasena = usuarioResult.contrasena;
+
+                    }
+                    else
+                    {
+                        // Si no se encuentra el usuario o la contraseña es incorrecta
+                        res.error.Add(new Error
+                        {
+                            codigoError = enumErrores.loginFallido,
+                            errorMsg = "Usuario o contraseña incorrectos"
+                        });
+                        res.Resultado = false;
+                    }
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                // Capturamos cualquier excepción inesperada
+                res.error.Add(new Error
+                {
+                    codigoError = enumErrores.errorNoControlado,
+                    errorMsg = ex.Message
+                });
+                res.Resultado = false;
+            }
+
+            return res;
+        }
+
+
     }
 
     // Método auxiliar para validar si una contraseña es fuerte

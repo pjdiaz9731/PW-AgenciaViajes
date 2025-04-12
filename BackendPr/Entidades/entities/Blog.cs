@@ -10,10 +10,12 @@ namespace Entidades
     public class Blog
     {
        
-        public string Titulo { get; set; }
-        public string Contenido { get; set; }
+        public string nombre {  get; set; }
+        public string email { get; set; }
+        public string sitioWeb { get; set; }
+        public string comentario { get; set; }
+        public int? usuarioID { get; set; }
        
-        public string Imagen { get; set; }
       
     }
 }
