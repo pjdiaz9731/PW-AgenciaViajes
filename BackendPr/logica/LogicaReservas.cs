@@ -11,13 +11,14 @@ namespace BackendPr.logica
 {
     public class LogicaReservas
     {
-        public ResInsertarReserva Insertar(ResInsertarReserva req, string errorDesc)
+        public ResInsertarReserva Insertar(ResInsertarReserva req)
         {
             ResInsertarReserva res = new ResInsertarReserva();
             res.error = new List<Error>();
 
             try
             {
+                // Validación inicial: Verificar si el request o la reserva es nula
                 if (req == null || req.Reservas == null)
                 {
                     res.error.Add(new Error
@@ -32,6 +33,7 @@ namespace BackendPr.logica
                 // Validaciones de fechas
                 if (req.Reservas.CheckIn == default || req.Reservas.CheckOut == default)
                 {
+                    // Validar que las fechas de check-in y check-out no sean valores por defecto
                     res.error.Add(new Error
                     {
                         codigoError = enumErrores.fechainvalida,
@@ -40,6 +42,7 @@ namespace BackendPr.logica
                 }
                 else if (req.Reservas.CheckIn >= req.Reservas.CheckOut)
                 {
+                    // Validar que la fecha de check-out sea posterior a la de check-in
                     res.error.Add(new Error
                     {
                         codigoError = enumErrores.fechainvalida,
@@ -47,9 +50,10 @@ namespace BackendPr.logica
                     });
                 }
 
-                // Validación de cantidad de adultos
-                if (req.Reservas.CantidadAdultos <= 0)
+                // Validación de cantidad de personas
+                if (req.Reservas.CantidadPersonas <= 0)
                 {
+                    // Validar que al menos haya una persona en la reserva
                     res.error.Add(new Error
                     {
                         codigoError = enumErrores.valorinvalido,
@@ -57,28 +61,32 @@ namespace BackendPr.logica
                     });
                 }
 
+                // Si hay errores en las validaciones, retornar el resultado con los errores
                 if (res.error.Any())
                 {
                     res.Resultado = false;
                     return res;
                 }
 
+                // Variables para manejar el resultado de la operación en la base de datos
                 int? idReserva = 0;
                 int? errorBD = 0;
-                errorDesc = "";
+                string errorDesc = "";
 
+                // Llamada al procedimiento almacenado para insertar la reserva
                 using (LinqConnecDataContext linq = new LinqConnecDataContext())
                 {
                     linq.sp_Reservas_Insertar(
+                        req.Reservas.UsuarioID,
+                        req.Reservas.CantidadPersonas,
                         req.Reservas.CheckIn,
                         req.Reservas.CheckOut,
-                        req.Reservas.CantidadAdultos,
-                        ref idReserva,
                         ref errorBD,
-                        errorDesc
+                        ref errorDesc
                     );
                 }
 
+                // Validar el resultado de la operación en la base de datos
                 if (idReserva <= 0 || errorBD != 0)
                 {
                     res.error.Add(new Error
@@ -95,6 +103,7 @@ namespace BackendPr.logica
             }
             catch (Exception ex)
             {
+                // Manejo de excepciones no controladas
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.errorNoControlado,
@@ -103,8 +112,8 @@ namespace BackendPr.logica
                 res.Resultado = false;
             }
 
+            // Retornar el resultado final
             return res;
         }
-
     }
 }

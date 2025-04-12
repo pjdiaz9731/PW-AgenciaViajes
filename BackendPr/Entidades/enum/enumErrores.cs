@@ -21,9 +21,11 @@ namespace Entidades
         credencialesNoValidas = 8,
         cuentaYaVerificada = 9,
         usuarioincorrecto= 10,
-        AsuntoFalta = 11,
+        FaltaTelefono = 11,
         SinMensaje = 12,
         fechainvalida =13,
         valorinvalido =14,
+        noError = 15,
+        errorBD = 16,
     }
 }

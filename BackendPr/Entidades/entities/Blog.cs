@@ -9,11 +9,10 @@ namespace Entidades
 {
     public class Blog
     {
-       
         public string Titulo { get; set; }
         public string Contenido { get; set; }
-       
-        public string Imagen { get; set; }
+        public string Autor { get; set; }
+        public int UsuarioID { get; set; }
       
     }
 }

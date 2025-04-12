@@ -11,6 +11,6 @@ namespace BackendViajes.Entidades.Request
         public string Titulo { get; set; }
         public string Contenido { get; set; }
         public string Autor { get; set; }
-        public string imagen { get; set; }
+        public int UsuarioID { get; set; }
     }
 }

@@ -11,14 +11,17 @@ public class ValidarUsuario
 {
     public ResValidacionUsuarios Validar(ResValidacionUsuarios req)
     {
+        // Crear una nueva instancia de ResValidacionUsuarios para almacenar el resultado
         ResValidacionUsuarios res = new ResValidacionUsuarios();
         res.error = new List<Error>();
 
-        
-        string usuarioEsperado = "Usuario"; 
+        // Definir el nombre de usuario esperado
+        string usuarioEsperado = "Usuario";
 
+        // Validar si el nombre completo del usuario coincide con el esperado
         if (req.Usuario.NombreCompleto != usuarioEsperado)
         {
+            // Agregar un error a la lista si el nombre no coincide
             res.error.Add(new Error
             {
                 codigoError = enumErrores.usuarioincorrecto,
@@ -26,6 +29,7 @@ public class ValidarUsuario
             });
         }
 
+        // Retornar el resultado de la validación
         return res;
     }
 }

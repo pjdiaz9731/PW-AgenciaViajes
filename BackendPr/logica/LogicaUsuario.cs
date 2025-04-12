@@ -10,20 +10,16 @@ using System.Text.RegularExpressions;
 
 public class LogicaUsuario
 {
-    public ResInsertarUsuario Insertar(ResInsertarUsuario req, string errorDesc)
+    public ResInsertarUsuario Insertar(ResInsertarUsuario req)
     {
         ResInsertarUsuario res = new ResInsertarUsuario();
-       
         res.error = new List<Error>();
-        
-        try
 
+        try
         {
-           
             // Validación: si el request o el objeto usuario son nulos
             if (req == null || req.Usuario == null)
             {
-               
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.reqNulo,
@@ -36,6 +32,7 @@ public class LogicaUsuario
             // Validaciones del usuario
             if (string.IsNullOrWhiteSpace(req.Usuario.NombreCompleto))
             {
+                // Validación: el nombre completo no debe estar vacío
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.nombreInvalido,
@@ -45,6 +42,7 @@ public class LogicaUsuario
 
             if (string.IsNullOrWhiteSpace(req.Usuario.Email))
             {
+                // Validación: el correo no debe estar vacío
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.correoFaltante,
@@ -53,6 +51,7 @@ public class LogicaUsuario
             }
             else if (!EsCorreoValido(req.Usuario.Email))
             {
+                // Validación: el correo debe tener un formato válido
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.correoNoValido,
@@ -62,6 +61,7 @@ public class LogicaUsuario
 
             if (string.IsNullOrWhiteSpace(req.Usuario.Contrasena))
             {
+                // Validación: la contraseña no debe estar vacía
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.passwordFaltante,
@@ -70,6 +70,7 @@ public class LogicaUsuario
             }
             else if (!EsPasswordFuerte(req.Usuario.Contrasena))
             {
+                // Validación: la contraseña debe ser fuerte
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.passwordDebil,
@@ -87,34 +88,34 @@ public class LogicaUsuario
             // Si todo está bien, insertamos el usuario en la base de datos
             int? idUsuario = 0;
             int? errorBD = 0;
-            errorDesc = "";
+            string errorDesc = "";
 
             using (LinqConnecDataContext linq = new LinqConnecDataContext())
             {
                 // Llamada al procedimiento almacenado para insertar el usuario
                 linq.sp_Usuarios_Insertar(
                     req.Usuario.NombreCompleto,
-                    req.Usuario.Email,
+                    req.Usuario.usuario,
                     req.Usuario.Contrasena,
-                    req.Usuario.Rol,
-                    ref idUsuario,
+                    req.Usuario.Email,
                     ref errorBD,
-                    errorDesc);
-            }
+                    ref errorDesc
+                );
 
-            // Verificamos si la inserción fue exitosa
-            if (idUsuario <= 0 || errorBD != 0)
-            {
-                res.error.Add(new Error
+                // Verificamos si la inserción fue exitosa
+                if (idUsuario <= 0 || errorBD != 0)
                 {
-                    codigoError = enumErrores.errorEnBaseDatos,
-                    errorMsg = errorDesc
-                });
-                res.Resultado = false;
-            }
-            else
-            {
-                res.Resultado = true;
+                    res.error.Add(new Error
+                    {
+                        codigoError = enumErrores.errorEnBaseDatos,
+                        errorMsg = errorDesc
+                    });
+                    res.Resultado = false;
+                }
+                else
+                {
+                    res.Resultado = true;
+                }
             }
         }
         catch (Exception ex)
@@ -148,6 +149,7 @@ public class LogicaUsuario
     // Método auxiliar para validar si una contraseña es fuerte
     private bool EsPasswordFuerte(string password)
     {
+        // La contraseña debe tener al menos una letra minúscula, una mayúscula, un número, un carácter especial y al menos 8 caracteres
         var regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$");
         return regex.IsMatch(password);
     }

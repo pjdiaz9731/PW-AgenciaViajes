@@ -8,9 +8,10 @@ namespace BackendPr.Entidades
 {
     public class Reservas
     {
+        public int UsuarioID { get; set; }
+        public int CantidadPersonas { get; set; }
         public DateTime CheckIn { get; set; }
         public DateTime CheckOut { get; set; }
-        public int CantidadAdultos { get; set; }
 
     }
 }

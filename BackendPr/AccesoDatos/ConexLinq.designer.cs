@@ -33,7 +33,7 @@ namespace BackendPr.AccesoDatos
     #endregion
 		
 		public LinqConnecDataContext() : 
-				base(global::BackendPr.Properties.Settings.Default.PW_AgenciaViajesConnectionString, mappingSource)
+				base(global::BackendPr.Properties.Settings.Default.PW_AgenciaViajesConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -62,13 +62,6 @@ namespace BackendPr.AccesoDatos
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Insertar")]
-		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rol", DbType="NVarChar(50)")] string rol)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombreCompleto, usuario, contrasena, email, rol);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Login")]
 		public ISingleResult<sp_Usuarios_LoginResult> sp_Usuarios_Login([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena)
 		{
@@ -76,31 +69,39 @@ namespace BackendPr.AccesoDatos
 			return ((ISingleResult<sp_Usuarios_LoginResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Blog_Insertar")]
-		public int sp_Blog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Titulo", DbType="NVarChar(150)")] string titulo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contenido", DbType="NVarChar(MAX)")] string contenido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Imagen", DbType="NVarChar(255)")] string imagen)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Insertar")]
+		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), titulo, contenido, imagen);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombreCompleto, usuario, contrasena, email, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(4)));
+			errorDesc = ((string)(result.GetParameterValue(5)));
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Blog_Listar")]
-		public ISingleResult<sp_Blog_ListarResult> sp_Blog_Listar()
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_MensajesContacto_Insertar")]
+		public int sp_MensajesContacto_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Telefono", DbType="NVarChar(200)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mensaje", DbType="NVarChar(MAX)")] string mensaje, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Direccion", DbType="NVarChar(150)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<sp_Blog_ListarResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Contacto_Insertar")]
-		public int sp_Contacto_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Asunto", DbType="NVarChar(200)")] string asunto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mensaje", DbType="NVarChar(MAX)")] string mensaje)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, email, asunto, mensaje);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, email, telefono, mensaje, direccion, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(5)));
+			errorDesc = ((string)(result.GetParameterValue(6)));
 			return ((int)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_Insertar")]
-		public int sp_Reservas_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TourID", DbType="Int")] System.Nullable<int> tourID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CantidadPersonas", DbType="Int")] System.Nullable<int> cantidadPersonas)
+		public int sp_Reservas_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CantidadPersonas", DbType="Int")] System.Nullable<int> cantidadPersonas, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CheckIn", DbType="DateTime")] System.Nullable<System.DateTime> checkIn, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CheckOut", DbType="DateTime")] System.Nullable<System.DateTime> checkOut, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, tourID, cantidadPersonas);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, cantidadPersonas, checkIn, checkOut, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(4)));
+			errorDesc = ((string)(result.GetParameterValue(5)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Blog_Insertar")]
+		public int sp_Blog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Titulo", DbType="NVarChar(150)")] string titulo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contenido", DbType="NVarChar(MAX)")] string contenido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Autor", DbType="NVarChar(200)")] string autor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), titulo, contenido, autor, usuarioID, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(4)));
+			errorDesc = ((string)(result.GetParameterValue(5)));
 			return ((int)(result.ReturnValue));
 		}
 	}
@@ -162,104 +163,6 @@ namespace BackendPr.AccesoDatos
 				if ((this._Rol != value))
 				{
 					this._Rol = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_Blog_ListarResult
-	{
-		
-		private int _PostID;
-		
-		private string _Titulo;
-		
-		private string _Contenido;
-		
-		private string _Imagen;
-		
-		private System.Nullable<System.DateTime> _FechaPublicacion;
-		
-		public sp_Blog_ListarResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PostID", DbType="Int NOT NULL")]
-		public int PostID
-		{
-			get
-			{
-				return this._PostID;
-			}
-			set
-			{
-				if ((this._PostID != value))
-				{
-					this._PostID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Titulo", DbType="NVarChar(150)")]
-		public string Titulo
-		{
-			get
-			{
-				return this._Titulo;
-			}
-			set
-			{
-				if ((this._Titulo != value))
-				{
-					this._Titulo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Contenido", DbType="NVarChar(MAX)")]
-		public string Contenido
-		{
-			get
-			{
-				return this._Contenido;
-			}
-			set
-			{
-				if ((this._Contenido != value))
-				{
-					this._Contenido = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Imagen", DbType="NVarChar(255)")]
-		public string Imagen
-		{
-			get
-			{
-				return this._Imagen;
-			}
-			set
-			{
-				if ((this._Imagen != value))
-				{
-					this._Imagen = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaPublicacion", DbType="DateTime")]
-		public System.Nullable<System.DateTime> FechaPublicacion
-		{
-			get
-			{
-				return this._FechaPublicacion;
-			}
-			set
-			{
-				if ((this._FechaPublicacion != value))
-				{
-					this._FechaPublicacion = value;
 				}
 			}
 		}
