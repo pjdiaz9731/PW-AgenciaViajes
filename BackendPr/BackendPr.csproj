@@ -57,46 +57,26 @@
     <Compile Include="Entidades\entities\Contacto.cs" />
     <Compile Include="Entidades\entities\Error.cs" />
     <Compile Include="Entidades\entities\Blog.cs" />
-<<<<<<< HEAD
     <Compile Include="Entidades\entities\Reservas.cs" />
     <Compile Include="Entidades\entities\Usuario.cs" />
     <Compile Include="Entidades\entities\Validar.cs" />
-=======
-    <Compile Include="Entidades\entities\Login.cs" />
-    <Compile Include="Entidades\entities\Reservas.cs" />
-    <Compile Include="Entidades\entities\Usuario.cs" />
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
     <Compile Include="Entidades\enum\enumErrores.cs" />
     <Compile Include="Entidades\Request\ReqInsertarBlog.cs" />
     <Compile Include="Entidades\Request\ReqInsertarContacto.cs" />
     <Compile Include="Entidades\Request\ReqInsertarReserva.cs" />
     <Compile Include="Entidades\Request\ReqInsertarUsuario.cs" />
-<<<<<<< HEAD
-=======
-    <Compile Include="Entidades\Request\ReqLoginUsuario.cs" />
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
     <Compile Include="Entidades\Request\ReqValidacionUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
     <Compile Include="Entidades\Response\ResInsertarBlog.cs" />
     <Compile Include="Entidades\Response\ResInsertarContacto.cs" />
     <Compile Include="Entidades\Response\ResInsertarReserva.cs" />
     <Compile Include="Entidades\Response\ResInsertarUsuario.cs" />
-<<<<<<< HEAD
     <Compile Include="Entidades\Response\ResValidacionUsuarios.cs" />
     <Compile Include="logica\Contacto.cs" />
     <Compile Include="logica\LogicaBlog.cs" />
     <Compile Include="logica\LogicaReservas.cs" />
     <Compile Include="logica\LogicaUsuario.cs" />
     <Compile Include="logica\ValidarUsuario.cs" />
-=======
-    <Compile Include="Entidades\Response\ResLoginUsuario.cs" />
-    <Compile Include="Entidades\Response\ResValidacionUsuarios.cs" />
-    <Compile Include="logica\Contacto.cs" />
-    <Compile Include="logica\LogicaBlog.cs" />
-    <Compile Include="logica\LogicaLogin.cs" />
-    <Compile Include="logica\LogicaReservas.cs" />
-    <Compile Include="logica\LogicaUsuario.cs" />
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

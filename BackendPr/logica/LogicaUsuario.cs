@@ -1,8 +1,4 @@
 ﻿using BackendPr.AccesoDatos;
-<<<<<<< HEAD
-=======
-using BackendPr.Entidades.Response;
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 using BackendViajes.Entidades;
 using Entidades;
 using System;
@@ -14,33 +10,20 @@ using System.Text.RegularExpressions;
 
 public class LogicaUsuario
 {
-<<<<<<< HEAD
     public ResInsertarUsuario Insertar(ResInsertarUsuario req)
     {
         ResInsertarUsuario res = new ResInsertarUsuario();
+
         res.error = new List<Error>();
 
         try
-        {
-            // Validación: si el request o el objeto usuario son nulos
-            if (req == null || req.Usuario == null)
-            {
-=======
-    public ResInsertarUsuario Insertar(ResInsertarUsuario req, ref string errorDesc)
-    {
-        ResInsertarUsuario res = new ResInsertarUsuario();
-       
-        res.error = new List<Error>();
-        
-        try
 
         {
-           
+
             // Validación: si el request o el objeto usuario son nulos
             if (req == null || req.Usuario == null)
             {
-               
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
+
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.reqNulo,
@@ -53,10 +36,6 @@ public class LogicaUsuario
             // Validaciones del usuario
             if (string.IsNullOrWhiteSpace(req.Usuario.NombreCompleto))
             {
-<<<<<<< HEAD
-                // Validación: el nombre completo no debe estar vacío
-=======
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.nombreInvalido,
@@ -66,10 +45,6 @@ public class LogicaUsuario
 
             if (string.IsNullOrWhiteSpace(req.Usuario.Email))
             {
-<<<<<<< HEAD
-                // Validación: el correo no debe estar vacío
-=======
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.correoFaltante,
@@ -78,10 +53,6 @@ public class LogicaUsuario
             }
             else if (!EsCorreoValido(req.Usuario.Email))
             {
-<<<<<<< HEAD
-                // Validación: el correo debe tener un formato válido
-=======
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.correoNoValido,
@@ -91,10 +62,6 @@ public class LogicaUsuario
 
             if (string.IsNullOrWhiteSpace(req.Usuario.Contrasena))
             {
-<<<<<<< HEAD
-                // Validación: la contraseña no debe estar vacía
-=======
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.passwordFaltante,
@@ -103,10 +70,6 @@ public class LogicaUsuario
             }
             else if (!EsPasswordFuerte(req.Usuario.Contrasena))
             {
-<<<<<<< HEAD
-                // Validación: la contraseña debe ser fuerte
-=======
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.passwordDebil,
@@ -124,17 +87,12 @@ public class LogicaUsuario
             // Si todo está bien, insertamos el usuario en la base de datos
             int? idUsuario = 0;
             int? errorBD = 0;
-<<<<<<< HEAD
             string errorDesc = "";
-=======
-            errorDesc = "";
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 
             using (LinqConnecDataContext linq = new LinqConnecDataContext())
             {
                 // Llamada al procedimiento almacenado para insertar el usuario
                 linq.sp_Usuarios_Insertar(
-<<<<<<< HEAD
                     req.Usuario.NombreCompleto,
                     req.Usuario.usuario,
                     req.Usuario.Contrasena,
@@ -157,31 +115,6 @@ public class LogicaUsuario
                 {
                     res.Resultado = true;
                 }
-=======
-                    req.Usuario.NombreCompleto,  
-                     req.Usuario.usuario,   
-                        req.Usuario.Contrasena,      
-                         req.Usuario.Email,          
-                             ref errorBD,                 
-                             ref errorDesc               
-);
-
-            }
-
-            // Verificamos si la inserción fue exitosa
-            if (idUsuario <= 0 || errorBD != 0)
-            {
-                res.error.Add(new Error
-                {
-                    codigoError = enumErrores.errorEnBaseDatos,
-                    errorMsg = errorDesc
-                });
-                res.Resultado = false;
-            }
-            else
-            {
-                res.Resultado = true;
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
             }
         }
         catch (Exception ex)
@@ -197,11 +130,7 @@ public class LogicaUsuario
 
         return res;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
     // Método auxiliar para validar si un correo es válido
     private bool EsCorreoValido(string correo)
     {
@@ -216,71 +145,9 @@ public class LogicaUsuario
         }
     }
 
-<<<<<<< HEAD
     // Método auxiliar para validar si una contraseña es fuerte
     private bool EsPasswordFuerte(string password)
     {
-        // La contraseña debe tener al menos una letra minúscula, una mayúscula, un número, un carácter especial y al menos 8 caracteres
-=======
-    public class LogicaLogin
-    {
-        public ResLoginUsuario Login(ResLoginUsuario req, ref string errorDesc)
-        {
-            ResLoginUsuario res = new ResLoginUsuario();
-            res.error = new List<Error>();
-            int? errorID = 0;
-            string errorMessage = "";
-
-            try
-            {
-                using (LinqConnecDataContext linq = new LinqConnecDataContext())
-                {
-                    // Llamada al procedimiento almacenado para login
-                    var usuarioResult = linq.sp_Usuarios_Login(res.Login.usuario, res.Login.contrasena, ref errorID, ref errorMessage);
-                    if (usuarioResult != null)
-                    {
-                        // Si el usuario es válido, se retorna el resultado exitoso
-                        res.Resultado = true;
-                        res.usuario = usuarioResult.usuario;
-                        res.contrasena = usuarioResult.contrasena;
-
-                    }
-                    else
-                    {
-                        // Si no se encuentra el usuario o la contraseña es incorrecta
-                        res.error.Add(new Error
-                        {
-                            codigoError = enumErrores.loginFallido,
-                            errorMsg = "Usuario o contraseña incorrectos"
-                        });
-                        res.Resultado = false;
-                    }
-
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                // Capturamos cualquier excepción inesperada
-                res.error.Add(new Error
-                {
-                    codigoError = enumErrores.errorNoControlado,
-                    errorMsg = ex.Message
-                });
-                res.Resultado = false;
-            }
-
-            return res;
-        }
-
-
-    }
-
-    // Método auxiliar para validar si una contraseña es fuerte
-    private bool EsPasswordFuerte(string password)
-    {
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
         var regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$");
         return regex.IsMatch(password);
     }

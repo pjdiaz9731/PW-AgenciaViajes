@@ -11,26 +11,13 @@ namespace BackendPr.logica
 {
     public class Contacto
     {
-<<<<<<< HEAD
         public ResInsertarContacto Insertar(ResInsertarContacto req)
         {
-            // Inicializamos el objeto de respuesta
             ResInsertarContacto res = new ResInsertarContacto();
             res.error = new List<Error>();
-
             // Validaciones del usuario
             if (string.IsNullOrWhiteSpace(req.Contacto.nombre))
             {
-                // Validación: El nombre es requerido
-=======
-        public ResInsertarContacto Insertar (ResInsertarContacto req, ref string errorDesc)
-        {
-            ResInsertarContacto res = new ResInsertarContacto();
-            res.error = new List<Error>();
-            // Validaciones del usuario
-            if (string.IsNullOrWhiteSpace(req.Contacto.Nombre))
-            {
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.nombreInvalido,
@@ -38,14 +25,8 @@ namespace BackendPr.logica
                 });
             }
 
-<<<<<<< HEAD
             if (string.IsNullOrWhiteSpace(req.Contacto.email))
             {
-                // Validación: El correo electrónico es requerido
-=======
-            if (string.IsNullOrWhiteSpace(req.Contacto.Email))
-            {
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.correoFaltante,
@@ -53,33 +34,17 @@ namespace BackendPr.logica
                 });
             }
 
-<<<<<<< HEAD
+
             if (string.IsNullOrWhiteSpace(req.Contacto.telefono))
-            {
-                // Validación: El número de teléfono es requerido
-                res.error.Add(new Error
-                {
-                    codigoError = enumErrores.FaltaTelefono,
-                    errorMsg = "Por favor ingresar numero de telefono"
-                });
-            }
-
-            if (string.IsNullOrWhiteSpace(req.Contacto.mensaje))
-            {
-                // Validación: El mensaje es requerido
-=======
-
-            if (string.IsNullOrWhiteSpace(req.Contacto.Direccion))
             {
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.AsuntoFalta,
-                    errorMsg = "Ingrese una direccion valida"
+                    errorMsg = "Por favor ingresar asunto"
                 });
             }
-            if (string.IsNullOrWhiteSpace(req.Contacto.Mensaje))
+            if (string.IsNullOrWhiteSpace(req.Contacto.mensaje))
             {
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
                 res.error.Add(new Error
                 {
                     codigoError = enumErrores.SinMensaje,
@@ -90,17 +55,6 @@ namespace BackendPr.logica
             // Si hubo errores en la validación, regresamos el resultado con errores
             if (res.error.Any())
             {
-<<<<<<< HEAD
-                res.Resultado = false; // Indicamos que la operación no fue exitosa
-                return res; // Retornamos el objeto de respuesta con los errores
-            }
-
-            // Si todo está bien, procedemos a insertar el usuario en la base de datos
-            int? idUsuario = 0; // Variable para almacenar el ID del usuario insertado
-            int? errorBD = 0; // Variable para almacenar el código de error de la base de datos
-            string errorDesc = ""; // Variable para almacenar la descripción del error
-
-=======
                 res.Resultado = false;
                 return res;
             }
@@ -108,36 +62,47 @@ namespace BackendPr.logica
             // Si todo está bien, insertamos el usuario en la base de datos
             int? idUsuario = 0;
             int? errorBD = 0;
-            errorDesc = "";
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
+            string errorDesc = "";
             using (LinqConnecDataContext linq = new LinqConnecDataContext())
             {
                 // Llamada al procedimiento almacenado para insertar el usuario
                 linq.sp_MensajesContacto_Insertar(
-<<<<<<< HEAD
                     req.Contacto.nombre,
-                    req.Contacto.email, 
+                    req.Contacto.email,
                     req.Contacto.telefono,
-                    req.Contacto.mensaje, 
+                    req.Contacto.mensaje,
                     req.Contacto.direccion,
-                    ref errorBD, 
+                    ref errorBD,
                     ref errorDesc
                 );
             }
 
-            // Retornamos el objeto de respuesta (puede ser extendido para incluir más información)
-            return res;
-=======
-                     req.Contacto.Nombre,
-                      req.Contacto.Email,
-                    req.Contacto.Telefono,
-                     req.Contacto.Mensaje,
-                     req.Contacto.Direccion,
-                    
-                        ref errorBD,
-                    ref errorDesc);
+            // Manejo de errores de la base de datos
+            if (errorBD != 0)
+            {
+                res.error.Add(new Error
+                {
+                    codigoError = enumErrores.errorBD,
+                    errorMsg = $"Error en la base de datos: {errorDesc}"
+                });
+                res.Resultado = false;
+                return res;
             }
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
+
+            // Si todo fue bien, devolvemos un resultado exitoso
+            res.Resultado = true;
+            res.error.Add(new Error
+            {
+                codigoError = enumErrores.noError,
+                errorMsg = "Contacto insertado correctamente"
+            });
+
+            return res;
         }
     }
-}
+        
+    }
+
+
+
+

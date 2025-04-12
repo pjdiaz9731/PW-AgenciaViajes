@@ -12,11 +12,6 @@ namespace Entidades
         public string usuario { get; set; }
         public string Contrasena { get; set; }
         public string Email { get; set; }
-<<<<<<< HEAD
-     
-=======
-        public string Rol { get; set; }
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 
     }
 }

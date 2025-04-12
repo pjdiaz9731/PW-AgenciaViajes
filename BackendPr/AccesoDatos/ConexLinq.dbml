@@ -1,39 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PW_AgenciaViajes" Class="LinqConnecDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-<<<<<<< HEAD
   <Connection Mode="AppSettings" ConnectionString="Data Source=DIEGO;Initial Catalog=PW_AgenciaViajes;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="BackendPr.Properties.Settings" SettingsPropertyName="PW_AgenciaViajesConnectionString1" Provider="System.Data.SqlClient" />
-=======
-  <Connection Mode="AppSettings" ConnectionString="Data Source=JEZIEL\SQLEXPRESS;Initial Catalog=PW_AgenciaViajes;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="BackendPr.Properties.Settings" SettingsPropertyName="PW_AgenciaViajesConnectionString" Provider="System.Data.SqlClient" />
-  <Function Name="dbo.sp_Usuarios_Insertar" Method="sp_Usuarios_Insertar">
-    <Parameter Name="NombreCompleto" Parameter="nombreCompleto" Type="System.String" DbType="NVarChar(150)" />
-    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="NVarChar(50)" />
-    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="NVarChar(255)" />
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(150)" />
-    <Parameter Name="Rol" Parameter="rol" Type="System.String" DbType="NVarChar(50)" />
+  <Function Name="dbo.sp_Blog_Insertar" Method="sp_Blog_Insertar">
+    <Parameter Name="Titulo" Parameter="titulo" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Contenido" Parameter="contenido" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Autor" Parameter="autor" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ErrorID" Parameter="errorID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
-  <Function Name="dbo.sp_Usuarios_Login" Method="sp_Usuarios_Login">
-    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="NVarChar(50)" />
-    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="NVarChar(255)" />
-    <ElementType Name="sp_Usuarios_LoginResult">
-      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NombreCompleto" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-      <Column Name="Rol" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-<<<<<<< HEAD
-  <Function Name="dbo.sp_Usuarios_Insertar" Method="sp_Usuarios_Insertar">
-    <Parameter Name="NombreCompleto" Parameter="nombreCompleto" Type="System.String" DbType="NVarChar(150)" />
-    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="NVarChar(50)" />
-    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="NVarChar(255)" />
+  <Function Name="dbo.sp_ComentariosBlog_Insertar" Method="sp_ComentariosBlog_Insertar">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(150)" />
-=======
-  <Function Name="dbo.sp_Reservas_Insertar" Method="sp_Reservas_Insertar">
-    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="CantidadPersonas" Parameter="cantidadPersonas" Type="System.Int32" DbType="Int" />
-    <Parameter Name="CheckIn" Parameter="checkIn" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="CheckOut" Parameter="checkOut" Type="System.DateTime" DbType="DateTime" />
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
+    <Parameter Name="SitioWeb" Parameter="sitioWeb" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="Comentario" Parameter="comentario" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="PostID" Parameter="postID" Type="System.Int32" DbType="Int" />
     <Parameter Name="ErrorID" Parameter="errorID" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
     <Return Type="System.Int32" />
@@ -48,25 +29,14 @@
     <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
-<<<<<<< HEAD
   <Function Name="dbo.sp_Reservas_Insertar" Method="sp_Reservas_Insertar">
     <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
     <Parameter Name="CantidadPersonas" Parameter="cantidadPersonas" Type="System.Int32" DbType="Int" />
     <Parameter Name="CheckIn" Parameter="checkIn" Type="System.DateTime" DbType="DateTime" />
     <Parameter Name="CheckOut" Parameter="checkOut" Type="System.DateTime" DbType="DateTime" />
-=======
-  <Function Name="dbo.sp_Blog_Obtener" Method="sp_Blog_Obtener">
-    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
     <Parameter Name="ErrorID" Parameter="errorID" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
-    <ElementType Name="sp_Blog_ObtenerResult">
-      <Column Name="PostID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Titulo" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-      <Column Name="Contenido" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Autor" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="FechaPublicacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="PublicadoPor" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-    </ElementType>
+    <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.sp_Reservas_PorUsuario" Method="sp_Reservas_PorUsuario">
     <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
@@ -81,39 +51,24 @@
       <Column Name="CheckOut" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sp_ComentariosBlog_Insertar" Method="sp_ComentariosBlog_Insertar">
-    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(100)" />
+  <Function Name="dbo.sp_Usuarios_Insertar" Method="sp_Usuarios_Insertar">
+    <Parameter Name="NombreCompleto" Parameter="nombreCompleto" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="NVarChar(255)" />
     <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(150)" />
-    <Parameter Name="SitioWeb" Parameter="sitioWeb" Type="System.String" DbType="NVarChar(255)" />
-    <Parameter Name="Comentario" Parameter="comentario" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="PostID" Parameter="postID" Type="System.Int32" DbType="Int" />
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
     <Parameter Name="ErrorID" Parameter="errorID" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
-<<<<<<< HEAD
-  <Function Name="dbo.sp_Blog_Insertar" Method="sp_Blog_Insertar">
-    <Parameter Name="Titulo" Parameter="titulo" Type="System.String" DbType="NVarChar(150)" />
-    <Parameter Name="Contenido" Parameter="contenido" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="Autor" Parameter="autor" Type="System.String" DbType="NVarChar(200)" />
-    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
+  <Function Name="dbo.sp_Usuarios_Login" Method="sp_Usuarios_Login">
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="NVarChar(255)" />
     <Parameter Name="ErrorID" Parameter="errorID" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
-    <Return Type="System.Int32" />
-=======
-  <Function Name="dbo.sp_Reservas_PorUsuario" Method="sp_Reservas_PorUsuario1">
-    <Parameter Name="UsuarioID" Parameter="usuarioID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ErrorID" Parameter="errorID" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="ErrorDesc" Parameter="errorDesc" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
-    <ElementType Name="sp_Reservas_PorUsuarioResult1">
-      <Column Name="ReservaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FechaReserva" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CantidadPersonas" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CheckIn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CheckOut" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    <ElementType Name="sp_Usuarios_LoginResult">
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreCompleto" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Usuario" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
     </ElementType>
->>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
   </Function>
 </Database>
