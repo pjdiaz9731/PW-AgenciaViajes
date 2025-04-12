@@ -33,7 +33,11 @@ namespace BackendPr.AccesoDatos
     #endregion
 		
 		public LinqConnecDataContext() : 
+<<<<<<< HEAD
 				base(global::BackendPr.Properties.Settings.Default.PW_AgenciaViajesConnectionString1, mappingSource)
+=======
+				base(global::BackendPr.Properties.Settings.Default.PW_AgenciaViajesConnectionString, mappingSource)
+>>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 		{
 			OnCreated();
 		}
@@ -62,6 +66,16 @@ namespace BackendPr.AccesoDatos
 			OnCreated();
 		}
 		
+<<<<<<< HEAD
+=======
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Insertar")]
+		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rol", DbType="NVarChar(50)")] string rol)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombreCompleto, usuario, contrasena, email, rol);
+			return ((int)(result.ReturnValue));
+		}
+		
+>>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Login")]
 		public ISingleResult<sp_Usuarios_LoginResult> sp_Usuarios_Login([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena)
 		{
@@ -69,10 +83,17 @@ namespace BackendPr.AccesoDatos
 			return ((ISingleResult<sp_Usuarios_LoginResult>)(result.ReturnValue));
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Usuarios_Insertar")]
 		public int sp_Usuarios_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreCompleto", DbType="NVarChar(150)")] string nombreCompleto, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Usuario", DbType="NVarChar(50)")] string usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasena", DbType="NVarChar(255)")] string contrasena, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombreCompleto, usuario, contrasena, email, errorID, errorDesc);
+=======
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_Insertar")]
+		public int sp_Reservas_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CantidadPersonas", DbType="Int")] System.Nullable<int> cantidadPersonas, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CheckIn", DbType="DateTime")] System.Nullable<System.DateTime> checkIn, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CheckOut", DbType="DateTime")] System.Nullable<System.DateTime> checkOut, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, cantidadPersonas, checkIn, checkOut, errorID, errorDesc);
+>>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 			errorID = ((System.Nullable<int>)(result.GetParameterValue(4)));
 			errorDesc = ((string)(result.GetParameterValue(5)));
 			return ((int)(result.ReturnValue));
@@ -87,6 +108,7 @@ namespace BackendPr.AccesoDatos
 			return ((int)(result.ReturnValue));
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_Insertar")]
 		public int sp_Reservas_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CantidadPersonas", DbType="Int")] System.Nullable<int> cantidadPersonas, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CheckIn", DbType="DateTime")] System.Nullable<System.DateTime> checkIn, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CheckOut", DbType="DateTime")] System.Nullable<System.DateTime> checkOut, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
 		{
@@ -103,6 +125,42 @@ namespace BackendPr.AccesoDatos
 			errorID = ((System.Nullable<int>)(result.GetParameterValue(4)));
 			errorDesc = ((string)(result.GetParameterValue(5)));
 			return ((int)(result.ReturnValue));
+=======
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Blog_Obtener")]
+		public ISingleResult<sp_Blog_ObtenerResult> sp_Blog_Obtener([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(1)));
+			errorDesc = ((string)(result.GetParameterValue(2)));
+			return ((ISingleResult<sp_Blog_ObtenerResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_PorUsuario")]
+		public ISingleResult<sp_Reservas_PorUsuarioResult> sp_Reservas_PorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(1)));
+			errorDesc = ((string)(result.GetParameterValue(2)));
+			return ((ISingleResult<sp_Reservas_PorUsuarioResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ComentariosBlog_Insertar")]
+		public int sp_ComentariosBlog_Insertar([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="NVarChar(150)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SitioWeb", DbType="NVarChar(255)")] string sitioWeb, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Comentario", DbType="NVarChar(MAX)")] string comentario, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PostID", DbType="Int")] System.Nullable<int> postID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, email, sitioWeb, comentario, postID, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(5)));
+			errorDesc = ((string)(result.GetParameterValue(6)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Reservas_PorUsuario")]
+		public ISingleResult<sp_Reservas_PorUsuarioResult1> sp_Reservas_PorUsuario1([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioID", DbType="Int")] System.Nullable<int> usuarioID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorID", DbType="Int")] ref System.Nullable<int> errorID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ErrorDesc", DbType="NVarChar(200)")] ref string errorDesc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioID, errorID, errorDesc);
+			errorID = ((System.Nullable<int>)(result.GetParameterValue(1)));
+			errorDesc = ((string)(result.GetParameterValue(2)));
+			return ((ISingleResult<sp_Reservas_PorUsuarioResult1>)(result.ReturnValue));
+>>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 		}
 	}
 	
@@ -167,5 +225,356 @@ namespace BackendPr.AccesoDatos
 			}
 		}
 	}
+<<<<<<< HEAD
+=======
+	
+	public partial class sp_Blog_ObtenerResult
+	{
+		
+		private int _PostID;
+		
+		private string _Titulo;
+		
+		private string _Contenido;
+		
+		private string _Autor;
+		
+		private System.Nullable<System.DateTime> _FechaPublicacion;
+		
+		private string _PublicadoPor;
+		
+		public sp_Blog_ObtenerResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PostID", DbType="Int NOT NULL")]
+		public int PostID
+		{
+			get
+			{
+				return this._PostID;
+			}
+			set
+			{
+				if ((this._PostID != value))
+				{
+					this._PostID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Titulo", DbType="NVarChar(150)")]
+		public string Titulo
+		{
+			get
+			{
+				return this._Titulo;
+			}
+			set
+			{
+				if ((this._Titulo != value))
+				{
+					this._Titulo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Contenido", DbType="NVarChar(MAX)")]
+		public string Contenido
+		{
+			get
+			{
+				return this._Contenido;
+			}
+			set
+			{
+				if ((this._Contenido != value))
+				{
+					this._Contenido = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Autor", DbType="NVarChar(200)")]
+		public string Autor
+		{
+			get
+			{
+				return this._Autor;
+			}
+			set
+			{
+				if ((this._Autor != value))
+				{
+					this._Autor = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaPublicacion", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaPublicacion
+		{
+			get
+			{
+				return this._FechaPublicacion;
+			}
+			set
+			{
+				if ((this._FechaPublicacion != value))
+				{
+					this._FechaPublicacion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PublicadoPor", DbType="NVarChar(150)")]
+		public string PublicadoPor
+		{
+			get
+			{
+				return this._PublicadoPor;
+			}
+			set
+			{
+				if ((this._PublicadoPor != value))
+				{
+					this._PublicadoPor = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_Reservas_PorUsuarioResult
+	{
+		
+		private int _ReservaID;
+		
+		private System.Nullable<int> _UsuarioID;
+		
+		private System.Nullable<System.DateTime> _FechaReserva;
+		
+		private System.Nullable<int> _CantidadPersonas;
+		
+		private System.Nullable<System.DateTime> _CheckIn;
+		
+		private System.Nullable<System.DateTime> _CheckOut;
+		
+		public sp_Reservas_PorUsuarioResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReservaID", DbType="Int NOT NULL")]
+		public int ReservaID
+		{
+			get
+			{
+				return this._ReservaID;
+			}
+			set
+			{
+				if ((this._ReservaID != value))
+				{
+					this._ReservaID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UsuarioID", DbType="Int")]
+		public System.Nullable<int> UsuarioID
+		{
+			get
+			{
+				return this._UsuarioID;
+			}
+			set
+			{
+				if ((this._UsuarioID != value))
+				{
+					this._UsuarioID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaReserva", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaReserva
+		{
+			get
+			{
+				return this._FechaReserva;
+			}
+			set
+			{
+				if ((this._FechaReserva != value))
+				{
+					this._FechaReserva = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CantidadPersonas", DbType="Int")]
+		public System.Nullable<int> CantidadPersonas
+		{
+			get
+			{
+				return this._CantidadPersonas;
+			}
+			set
+			{
+				if ((this._CantidadPersonas != value))
+				{
+					this._CantidadPersonas = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CheckIn", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CheckIn
+		{
+			get
+			{
+				return this._CheckIn;
+			}
+			set
+			{
+				if ((this._CheckIn != value))
+				{
+					this._CheckIn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CheckOut", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CheckOut
+		{
+			get
+			{
+				return this._CheckOut;
+			}
+			set
+			{
+				if ((this._CheckOut != value))
+				{
+					this._CheckOut = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_Reservas_PorUsuarioResult1
+	{
+		
+		private int _ReservaID;
+		
+		private System.Nullable<int> _UsuarioID;
+		
+		private System.Nullable<System.DateTime> _FechaReserva;
+		
+		private System.Nullable<int> _CantidadPersonas;
+		
+		private System.Nullable<System.DateTime> _CheckIn;
+		
+		private System.Nullable<System.DateTime> _CheckOut;
+		
+		public sp_Reservas_PorUsuarioResult1()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReservaID", DbType="Int NOT NULL")]
+		public int ReservaID
+		{
+			get
+			{
+				return this._ReservaID;
+			}
+			set
+			{
+				if ((this._ReservaID != value))
+				{
+					this._ReservaID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UsuarioID", DbType="Int")]
+		public System.Nullable<int> UsuarioID
+		{
+			get
+			{
+				return this._UsuarioID;
+			}
+			set
+			{
+				if ((this._UsuarioID != value))
+				{
+					this._UsuarioID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaReserva", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaReserva
+		{
+			get
+			{
+				return this._FechaReserva;
+			}
+			set
+			{
+				if ((this._FechaReserva != value))
+				{
+					this._FechaReserva = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CantidadPersonas", DbType="Int")]
+		public System.Nullable<int> CantidadPersonas
+		{
+			get
+			{
+				return this._CantidadPersonas;
+			}
+			set
+			{
+				if ((this._CantidadPersonas != value))
+				{
+					this._CantidadPersonas = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CheckIn", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CheckIn
+		{
+			get
+			{
+				return this._CheckIn;
+			}
+			set
+			{
+				if ((this._CheckIn != value))
+				{
+					this._CheckIn = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CheckOut", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CheckOut
+		{
+			get
+			{
+				return this._CheckOut;
+			}
+			set
+			{
+				if ((this._CheckOut != value))
+				{
+					this._CheckOut = value;
+				}
+			}
+		}
+	}
+>>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
 }
 #pragma warning restore 1591

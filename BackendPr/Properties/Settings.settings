@@ -10,6 +10,7 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=JEZIEL\SQLEXPRESS;Initial Catalog=PW_AgenciaViajes;Integrated Security=True;TrustServerCertificate=True</Value>
     </Setting>
+<<<<<<< HEAD
     <Setting Name="PW_AgenciaViajesConnectionString1" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
@@ -18,5 +19,7 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DIEGO;Initial Catalog=PW_AgenciaViajes;Integrated Security=True;TrustServerCertificate=True</Value>
     </Setting>
+=======
+>>>>>>> 3f593ee82dcad5985bccb27237c4af37ade93c64
   </Settings>
 </SettingsFile>
