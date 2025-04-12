@@ -9,22 +9,23 @@ using System.Text.RegularExpressions;
 
 public class ValidarUsuario
 {
-    public ResValidacionUsuarios Validar(ResValidacionUsuarios req)
+    public ResValidacionUsuarios Validar(ReqValidacionUsuario req)
     {
         ResValidacionUsuarios res = new ResValidacionUsuarios();
         res.error = new List<Error>();
 
-        
-        string usuarioEsperado = "Usuario"; 
+        string usuarioEsperado = "Usuario";
 
-        if (req.Usuario.NombreCompleto != usuarioEsperado)
+        
+        if (req.Usuario == usuarioEsperado)
         {
-            res.error.Add(new Error
-            {
-                codigoError = enumErrores.usuarioincorrecto,
-                errorMsg = "Nombre completo incorrecto"
-            });
+            return res;
         }
+        res.error.Add(new Error
+        {
+            codigoError = enumErrores.usuarioincorrecto,
+            errorMsg = "Nombre completo incorrecto"
+        });
 
         return res;
     }

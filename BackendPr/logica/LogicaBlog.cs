@@ -1,5 +1,6 @@
 ﻿using BackendPr.AccesoDatos;
 using BackendViajes.Entidades;
+using BackendViajes.Entidades.Request;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace BackendPr.logica
 {
     public class LogicaBlog
     {
-        public ResInsertarBlog Insertar(ResInsertarBlog req)
+        public ResInsertarBlog Insertar(ReqInsertarBlog req)
         {
             ResInsertarBlog res = new ResInsertarBlog();
             res.error = new List<Error>();

@@ -9,7 +9,7 @@ namespace BackendViajes.Entidades
 {
     public class ResInsertarBlog: ResBase
     {
-        public Blog Blog { get; set; }
+     
 
     }
 }

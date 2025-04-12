@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BackendPr.Entidades.Request
 {
-    internal class ReqInsertarReserva
+    public class ReqInsertarReserva
     {
+        public Reservas Reservas { get; set; }
     }
 }

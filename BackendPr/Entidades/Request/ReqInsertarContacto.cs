@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BackendPr.Entidades.Request
 {
-    internal class ReqInsertarContacto
+    public class ReqInsertarContacto
     {
+        public Contacto Contacto;
+
+
     }
 }

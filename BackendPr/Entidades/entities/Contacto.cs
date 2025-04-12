@@ -17,5 +17,6 @@ namespace BackendPr.Entidades
         public string mensaje { get; set; }
 
         public string direccion { get; set; }
+
     }
 }

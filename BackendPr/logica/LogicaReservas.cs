@@ -1,4 +1,5 @@
 ﻿using BackendPr.AccesoDatos;
+using BackendPr.Entidades.Request;
 using BackendPr.Entidades.Response;
 using Entidades;
 using System;
@@ -11,7 +12,7 @@ namespace BackendPr.logica
 {
     public class LogicaReservas
     {
-        public ResInsertarReserva Insertar(ResInsertarReserva req)
+        public ResInsertarReserva Insertar(ReqInsertarReserva req)
         {
             ResInsertarReserva res = new ResInsertarReserva();
             res.error = new List<Error>();

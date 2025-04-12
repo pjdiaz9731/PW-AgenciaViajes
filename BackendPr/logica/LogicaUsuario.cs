@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 public class LogicaUsuario
 {
-    public ResInsertarUsuario Insertar(ResInsertarUsuario req)
+    public ResInsertarUsuario Insertar(ReqInsertarUsuario req)
     {
         ResInsertarUsuario res = new ResInsertarUsuario();
 

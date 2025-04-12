@@ -1,5 +1,6 @@
 ﻿using BackendPr.AccesoDatos;
 using BackendPr.Entidades;
+using BackendPr.Entidades.Request;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace BackendPr.logica
 {
     public class Contacto
     {
-        public ResInsertarContacto Insertar(ResInsertarContacto req)
+        public ResInsertarContacto Insertar(ReqInsertarContacto req)
         {
             ResInsertarContacto res = new ResInsertarContacto();
             res.error = new List<Error>();
