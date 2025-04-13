@@ -138,8 +138,7 @@
               "RelativeToolTip": "logica\\LogicaReservas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T01:00:59.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T01:00:59.098Z"
             },
             {
               "$type": "Document",
@@ -151,8 +150,7 @@
               "RelativeToolTip": "logica\\Contacto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T09:34:56.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T09:34:56.295Z"
             },
             {
               "$type": "Document",
@@ -164,8 +162,7 @@
               "RelativeToolTip": "logica\\LogicaUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:36:44.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:36:44.169Z"
             },
             {
               "$type": "Document",
@@ -177,8 +174,7 @@
               "RelativeToolTip": "Entidades\\Request\\ReqInsertarContacto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T09:35:24.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T09:35:24.456Z"
             },
             {
               "$type": "Document",
@@ -190,8 +186,7 @@
               "RelativeToolTip": "Entidades\\entities\\Contacto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T09:32:47.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T09:32:47.447Z"
             },
             {
               "$type": "Document",
@@ -203,8 +198,7 @@
               "RelativeToolTip": "logica\\ValidarUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:36:58.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:36:58.106Z"
             },
             {
               "$type": "Document",
@@ -216,8 +210,7 @@
               "RelativeToolTip": "Entidades\\Request\\ReqValidacionUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:03:34.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:03:34.51Z"
             },
             {
               "$type": "Document",
@@ -229,8 +222,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResValidacionUsuarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:05:08.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T05:05:08.786Z"
             },
             {
               "$type": "Document",
@@ -242,8 +234,7 @@
               "RelativeToolTip": "Entidades\\entities\\Validar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:10:19.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:10:19.325Z"
             },
             {
               "$type": "Document",
@@ -255,8 +246,7 @@
               "RelativeToolTip": "logica\\LogicaBlog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T21:04:12.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T21:04:12.54Z"
             },
             {
               "$type": "Document",
@@ -268,8 +258,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResInsertarContacto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T09:35:43.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T09:35:43.218Z"
             },
             {
               "$type": "Document",
@@ -281,8 +270,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:30:55.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T19:30:55.028Z"
             },
             {
               "$type": "Document",
@@ -294,8 +282,7 @@
               "RelativeToolTip": "Entidades\\entities\\Error.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:51:49.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T08:51:49.382Z"
             },
             {
               "$type": "Document",
@@ -307,8 +294,7 @@
               "RelativeToolTip": "Entidades\\enum\\enumErrores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:50:20.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:50:20.908Z"
             },
             {
               "$type": "Document",
@@ -320,8 +306,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResInsertarReserva.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T01:01:48.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T01:01:48.717Z"
             },
             {
               "$type": "Document",
@@ -333,8 +318,7 @@
               "RelativeToolTip": "AccesoDatos\\ConexLinq.designer.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAywGoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T20:18:50.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T20:18:50.794Z"
             },
             {
               "$type": "Document",
@@ -346,8 +330,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResInsertarBlog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:42:34.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:42:34.291Z"
             },
             {
               "$type": "Document",
@@ -359,8 +342,7 @@
               "RelativeToolTip": "Entidades\\Request\\ReqInsertarReserva.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T01:01:36.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T01:01:36.539Z"
             },
             {
               "$type": "Document",
@@ -372,8 +354,7 @@
               "RelativeToolTip": "Entidades\\entities\\Reservas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T00:31:11.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T00:31:11.041Z"
             },
             {
               "$type": "Document",
@@ -384,8 +365,7 @@
               "ToolTip": "C:\\Users\\Diego\\OneDrive\\Documentos\\Git\\PW-AgenciaViajes\\BackendPr\\AccesoDatos\\ConexLinq.dbml",
               "RelativeToolTip": "AccesoDatos\\ConexLinq.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2025-04-09T21:05:05.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T21:05:05.211Z"
             },
             {
               "$type": "Document",
@@ -397,8 +377,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResInsertarUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:42:31.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:42:31.435Z"
             },
             {
               "$type": "Document",
@@ -410,8 +389,7 @@
               "RelativeToolTip": "Entidades\\entities\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:39:43.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:39:43.107Z"
             },
             {
               "$type": "Document",
@@ -423,8 +401,7 @@
               "RelativeToolTip": "Entidades\\entities\\Blog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T21:06:11.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T21:06:11.775Z"
             },
             {
               "$type": "Document",
@@ -436,8 +413,7 @@
               "RelativeToolTip": "Entidades\\Request\\ReqInsertarBlog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:29:24.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T19:29:24.992Z"
             },
             {
               "$type": "Document",
@@ -449,8 +425,7 @@
               "RelativeToolTip": "Entidades\\Request\\ReqInsertarUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:39:22.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:39:22.124Z"
             }
           ]
         }
