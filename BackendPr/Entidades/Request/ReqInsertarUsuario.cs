@@ -9,7 +9,7 @@ namespace BackendViajes.Entidades
 {
     public class ReqInsertarUsuario
     {
-        public Usuario Usuario;
-    
+        public Usuario Usuario { get; set; }
+
     }
 }

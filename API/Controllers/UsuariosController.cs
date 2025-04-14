@@ -1,16 +1,17 @@
-﻿using System.Web.Http;
+﻿using System.Web.Http; // Asegúrate de que esta línea esté presente para usar IHttpActionResult y métodos como BadRequest.
 using BackendViajes.Entidades; // Para ReqInsertarUsuario y ResInsertarUsuario
 using BackendPr.logica;
 using System.Linq;
 using System; // Asegúrate de tener la referencia correcta a la lógica de negocio
+using System.Web.Mvc; // Nota: Esto puede ser redundante si no estás usando clases específicas de MVC.
 
 namespace BackendPr.Controllers
 {
     /// <summary>
     /// Controlador para las operaciones relacionadas con usuarios.
     /// </summary>
-    [RoutePrefix("api/usuarios")]
-    public class UsuariosController : ApiController
+    [System.Web.Http.RoutePrefix("api/usuarios")]
+    public class UsuariosController : ApiController // Cambiado de Controller a ApiController
     {
         /// <summary>
         /// Inserta un nuevo usuario en el sistema.
@@ -20,8 +21,8 @@ namespace BackendPr.Controllers
         /// <response code="200">Usuario insertado correctamente.</response>
         /// <response code="400">Solicitud incorrecta (por ejemplo, datos inválidos).</response>
         /// <response code="500">Error interno en el servidor.</response>
-        [HttpPost]
-        [Route("insertar")]
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("insertar")]
         public IHttpActionResult InsertarUsuario([FromBody] ReqInsertarUsuario req)
         {
             // Verificamos que el objeto recibido no sea nulo

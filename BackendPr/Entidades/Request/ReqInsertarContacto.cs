@@ -8,7 +8,7 @@ namespace BackendPr.Entidades.Request
 {
     public class ReqInsertarContacto
     {
-        public Contacto Contacto;
+        public Contacto Contacto { get; set; }
 
 
     }
