@@ -1,0 +1,27 @@
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.faq-item {
+    background: #63AB45  !important; /* A pleasant green color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 14px rgba(46, 128, 236, 0.25) !important;
+}
+.faq-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #000 !important;
+    text-align: center;
+}
+.faq-item p {
+    font-size: 1rem;
+    color: #ffff !important;
+    text-align: center;
+}
