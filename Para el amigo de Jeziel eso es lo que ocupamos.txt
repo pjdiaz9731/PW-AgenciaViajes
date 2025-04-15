@@ -1,0 +1,15 @@
+1.	Extracción de Datos desde la Interfaz
+	•	Capturar los datos ingresados por el usuario en formularios.
+	•	Validar los campos antes del envío (que no estén vacíos o con errores).
+	•	Preparar los datos en formato JSON correcto.
+	2.	Envío de Datos al Backend (API)
+	•	Realizar peticiones POST o PUT desde la interfaz al backend.
+	•	Enviar el body en JSON con los datos recopilados.
+	•	Asegurar que el backend reciba y procese correctamente el JSON.
+	3.	Verificación de Controladores y Almacenamiento
+	•	Validar que los controladores en C# reciban bien los datos.
+	•	Confirmar que los datos se guarden correctamente en la base de datos (Azure).
+	•	Manejar respuestas y errores del backend para mostrar al usuario.
+	4.	Revisión de GQueries
+	•	Verificar que las GQueries estén correctamente formuladas.
+	•	Validar que consulten y devuelvan la información esperada.
